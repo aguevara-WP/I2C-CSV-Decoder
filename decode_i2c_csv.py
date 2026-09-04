@@ -14,7 +14,9 @@ from pathlib import Path
 from typing import Any
 
 
-DEFAULT_MAP = Path(__file__).with_name("register_map.json")
+DEFAULT_MAP = Path(__file__).with_name("register_maps").joinpath(
+    "MAX77972_register_map.json"
+)
 HEX_BYTE_RE = re.compile(r"^(?:0x)?([0-9a-fA-F]{1,2})(\*)?$")
 
 
