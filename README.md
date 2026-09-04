@@ -4,21 +4,6 @@ Adds a `Description` column to a Total Phase Data Center I2C CSV, translating MA
 
 The decoder is Python standard-library only. A virtual environment is recommended but not required.
 
-## Setup
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-On bash:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-No extra packages are installed. Run the script with the project venv's Python, or any Python 3.9+ interpreter.
 
 ## Usage
 
@@ -62,10 +47,7 @@ Scaled registers print engineering units. Bitfield registers print named fields,
 
 ## Register map
 
-`register_map.json` is the source of names, scales, bitfields, and enums. It follows Analog Devices MAX77972 datasheet Rev 1 (1/25). Registers that the datasheet only documents as raw characterization data (`OCVTable`, `XTable`, `QRTable`, `nRComp0`, `nTempCo`, and similar) remain hex.
+`MAX77972_register_map.json` is the source of names, scales, bitfields, and enums. It follows Analog Devices MAX77972 datasheet Rev 1 (1/25). Registers that the datasheet only documents as raw characterization data (`OCVTable`, `XTable`, `QRTable`, `nRComp0`, `nTempCo`, and similar) remain hex.
 
 To support another device, copy the JSON shape (`addresses`, `registers`, `format`, `fields`) and pass it with `-m`.
 
-## Sample capture
-
-`MAX77972 Capture.csv` is a Total Phase export you can decode with the command in **Usage**.
