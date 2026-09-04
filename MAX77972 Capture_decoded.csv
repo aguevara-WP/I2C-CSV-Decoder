@@ -1,0 +1,1066 @@
+# Total Phase Data Center(tm) v8.10,,,,,,,,,
+# (c) 2005-2026 Total Phase, Inc.,,,,,,,,
+# www.totalphase.com,,,,,,,,,
+#,,,,,,,,,
+# ,,,,,,,,,
+#,,,,,,,,,
+# Level,Index,m:s.ms.us,Dur,Len,Err,S/P,Addr,Record,Data,Description
+0,0,0:00.000.000,,,,,,Capture started,[09/01/26 11:00:19],Capture started [09/01/26 11:00:19]
+0,1,5:04.540.193,88.550 us,1 B,,S,36,Write Transaction,21,Set pointer DevName (0x021)
+0,2,5:04.540.281,128.150 us,2 B,,SP,36,Read Transaction,30 50*,Read DevName (0x021) = 0x5030 (MAX77972)
+0,3,5:04.540.513,88.550 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,4,5:04.540.602,128.150 us,2 B,,SP,36,Read Transaction,02 00*,Read nChgConfig5 (0x0D5) = 0x0002 (ChgEnable=1 (charger enabled))
+0,5,5:04.540.737,169.150 us,3 B,,SP,36,Write Transaction,D5 00 00,Write nChgConfig5 (0x0D5) = 0x0000 (ChgEnable=0 (charger disabled))
+0,6,5:04.540.914,88.300 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,7,5:04.541.002,128.200 us,2 B,,SP,36,Read Transaction,00 00*,Read nChgConfig5 (0x0D5) = 0x0000 (ChgEnable=0 (charger disabled))
+0,8,5:04.551.857,88.300 us,1 B,,S,36,Write Transaction,3D,Set pointer FStat (0x03D)
+0,9,5:04.551.945,128.150 us,2 B,,SP,36,Read Transaction,00 00*,Read FStat (0x03D) = 0x0000 (no named flags set)
+0,10,5:04.552.143,88.550 us,1 B,,S,36,Write Transaction,D4,Set pointer nChgConfig4 (0x0D4)
+0,11,5:04.552.231,128.200 us,2 B,,SP,36,Read Transaction,24 09*,"Read nChgConfig4 (0x0D4) = 0x0924 (SDPMaxCurr=0 (no CHGIN_INLIM change), DCDCpl=1 (data contact detect 900ms), CHGDETEN=1 (BC1.2 runs automatically), NO_AUTOISET=0 (input limit from USB_INLIM), DATAMUX=0 (pushbutton reset on DATAMUX), VCHGIN_REG=0 (4.5V), INLIM_CLK=2 (1024us))"
+0,12,5:04.552.366,169.000 us,3 B,,SP,36,Write Transaction,D4 64 09,"Write nChgConfig4 (0x0D4) = 0x0964 (SDPMaxCurr=0 (no CHGIN_INLIM change), DCDCpl=1 (data contact detect 900ms), CHGDETEN=1 (BC1.2 runs automatically), NO_AUTOISET=0 (input limit from USB_INLIM), DATAMUX=1 (USB data mux on DATAMUX), VCHGIN_REG=0 (4.5V), INLIM_CLK=2 (1024us))"
+0,13,5:04.552.542,88.300 us,1 B,,S,36,Write Transaction,D4,Set pointer nChgConfig4 (0x0D4)
+0,14,5:04.552.630,128.150 us,2 B,,SP,36,Read Transaction,64 09*,"Read nChgConfig4 (0x0D4) = 0x0964 (SDPMaxCurr=0 (no CHGIN_INLIM change), DCDCpl=1 (data contact detect 900ms), CHGDETEN=1 (BC1.2 runs automatically), NO_AUTOISET=0 (input limit from USB_INLIM), DATAMUX=1 (USB data mux on DATAMUX), VCHGIN_REG=0 (4.5V), INLIM_CLK=2 (1024us))"
+0,15,5:04.552.766,88.300 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,16,5:04.552.854,128.200 us,2 B,,SP,36,Read Transaction,02 00*,Read Status (0x000) = 0x0002 (POR=1 (power-on reset detected))
+0,17,5:04.553.182,88.550 us,1 B,,S,36,Write Transaction,0C,Set pointer Config (0x00C)
+0,18,5:04.553.270,128.200 us,2 B,,SP,36,Read Transaction,00 20*,Read Config (0x00C) = 0x2000 (TS=1 (temperature alerts cleared by software only))
+0,19,5:04.553.405,169.000 us,3 B,,SP,36,Write Transaction,0C 03 20,"Write Config (0x00C) = 0x2003 (TS=1 (temperature alerts cleared by software only), Bei=1 (battery insertion alert enabled), Ber=1 (battery removal alert enabled))"
+0,20,5:04.553.581,88.300 us,1 B,,S,36,Write Transaction,0C,Set pointer Config (0x00C)
+0,21,5:04.553.669,128.150 us,2 B,,SP,36,Read Transaction,03 20*,"Read Config (0x00C) = 0x2003 (TS=1 (temperature alerts cleared by software only), Bei=1 (battery insertion alert enabled), Ber=1 (battery removal alert enabled))"
+0,22,5:04.553.804,88.350 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,23,5:04.553.892,128.200 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,24,5:04.554.027,88.300 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,25,5:04.554.115,128.150 us,2 B,,SP,36,Read Transaction,02 00*,Read Status (0x000) = 0x0002 (POR=1 (power-on reset detected))
+0,26,5:04.554.250,88.300 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,27,5:04.554.338,128.200 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,28,5:04.554.658,88.550 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,29,5:04.554.746,128.150 us,2 B,,SP,36,Read Transaction,00 00*,Read nChgConfig5 (0x0D5) = 0x0000 (ChgEnable=0 (charger disabled))
+0,30,5:04.554.881,168.950 us,3 B,,SP,36,Write Transaction,D5 02 00,Write nChgConfig5 (0x0D5) = 0x0002 (ChgEnable=1 (charger enabled))
+0,31,5:04.555.057,88.300 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,32,5:04.555.145,128.150 us,2 B,,SP,36,Read Transaction,02 00*,Read nChgConfig5 (0x0D5) = 0x0002 (ChgEnable=1 (charger enabled))
+0,33,5:04.555.281,88.300 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,34,5:04.555.369,128.200 us,2 B,,SP,36,Read Transaction,E1 CF*,Read VCell (0x01A) = 0xCFE1 (4157.578 mV)
+0,35,5:04.555.599,88.550 us,1 B,,S,37,Write Transaction,BB,Set pointer nHibCfg (0x1BB)
+0,36,5:04.555.688,128.200 us,2 B,,SP,37,Read Transaction,09 89*,"Read nHibCfg (0x1BB) = 0x8909 (EnHib=1 (hibernate enabled), HibEnterTime=0, HibThreshold=9, HibExitTime=1, HibScalar=1)"
+0,37,5:04.555.823,168.750 us,3 B,,SP,37,Write Transaction,BB 09 09,"Write nHibCfg (0x1BB) = 0x0909 (EnHib=0 (hibernate disabled), HibEnterTime=0, HibThreshold=9, HibExitTime=1, HibScalar=1)"
+0,38,5:04.555.999,88.300 us,1 B,,S,37,Write Transaction,BB,Set pointer nHibCfg (0x1BB)
+0,39,5:04.556.088,128.150 us,2 B,,SP,37,Read Transaction,09 09*,"Read nHibCfg (0x1BB) = 0x0909 (EnHib=0 (hibernate disabled), HibEnterTime=0, HibThreshold=9, HibExitTime=1, HibScalar=1)"
+0,40,5:04.556.371,88.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,41,5:04.556.460,128.150 us,2 B,,SP,36,Read Transaction,DC 05*,Read DesignCap (0x018) = 0x05DC (750 mAh)
+0,42,5:04.556.644,169.100 us,3 B,,SP,36,Write Transaction,18 D8 0E,Write DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,43,5:04.556.821,88.300 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,44,5:04.556.909,128.200 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,45,5:04.557.194,88.550 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,46,5:04.557.282,128.150 us,2 B,,SP,36,Read Transaction,80 02*,Read IChgTerm (0x029) = 0x0280 (100 mA)
+0,47,5:04.557.466,169.150 us,3 B,,SP,36,Write Transaction,29 80 0C,Write IChgTerm (0x029) = 0x0C80 (500 mA)
+0,48,5:04.557.643,88.400 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,49,5:04.557.732,128.200 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,50,5:04.558.013,88.550 us,1 B,,S,36,Write Transaction,1F,Set pointer VEmpty (0x01F)
+0,51,5:04.558.102,128.150 us,2 B,,SP,36,Read Transaction,61 A5*,"Read VEmpty (0x01F) = 0xA561 (VE=3300 mV, VR=3880 mV)"
+0,52,5:04.558.285,169.100 us,3 B,,SP,36,Write Transaction,1F 61 AA,"Write VEmpty (0x01F) = 0xAA61 (VE=3400 mV, VR=3880 mV)"
+0,53,5:04.558.462,88.450 us,1 B,,S,36,Write Transaction,1F,Set pointer VEmpty (0x01F)
+0,54,5:04.558.550,128.150 us,2 B,,SP,36,Read Transaction,61 AA*,"Read VEmpty (0x01F) = 0xAA61 (VE=3400 mV, VR=3880 mV)"
+0,55,5:04.558.834,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,56,5:04.558.922,128.150 us,2 B,,SP,36,Read Transaction,00 04*,"Read ModelCfg (0x0A3) = 0x0400 (VChg=1 (charge termination above 4.25V), ModelID=0 (lithium cobalt-oxide variants))"
+0,57,5:04.559.107,169.100 us,3 B,,SP,36,Write Transaction,A3 00 80,"Write ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,58,5:04.559.283,88.400 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,59,5:04.559.372,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,60,5:04.559.507,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,61,5:04.559.595,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,62,5:04.560.858,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,63,5:04.560.946,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,64,5:04.562.858,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,65,5:04.562.947,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,66,5:04.564.859,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,67,5:04.564.947,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,68,5:04.566.858,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,69,5:04.566.947,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,70,5:04.568.859,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,71,5:04.568.947,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,72,5:04.570.859,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,73,5:04.570.947,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,74,5:04.572.860,88.500 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,75,5:04.572.948,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,76,5:04.574.859,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,77,5:04.574.948,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,78,5:04.576.860,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,79,5:04.576.948,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,80,5:04.578.860,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,81,5:04.578.948,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,82,5:04.580.860,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,83,5:04.580.949,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,84,5:04.582.860,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,85,5:04.582.948,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,86,5:04.584.861,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,87,5:04.584.949,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,88,5:04.586.861,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,89,5:04.586.949,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,90,5:04.588.861,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,91,5:04.588.950,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,92,5:04.590.861,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,93,5:04.590.949,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,94,5:04.592.862,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,95,5:04.592.950,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,96,5:04.594.861,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,97,5:04.594.950,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,98,5:04.596.862,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,99,5:04.596.950,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,100,5:04.598.862,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,101,5:04.598.950,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,102,5:04.600.863,88.500 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,103,5:04.600.951,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,104,5:04.602.862,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,105,5:04.602.951,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,106,5:04.604.863,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,107,5:04.604.951,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,108,5:04.606.863,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,109,5:04.606.951,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,110,5:04.608.863,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,111,5:04.608.952,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,112,5:04.610.863,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,113,5:04.610.951,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,114,5:04.612.864,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,115,5:04.612.952,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,116,5:04.614.864,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,117,5:04.614.952,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,118,5:04.616.864,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,119,5:04.616.953,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,120,5:04.618.864,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,121,5:04.618.952,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,122,5:04.620.865,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,123,5:04.620.953,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,124,5:04.622.864,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,125,5:04.622.953,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,126,5:04.624.865,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,127,5:04.624.953,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,128,5:04.626.865,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,129,5:04.626.953,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,130,5:04.628.866,88.500 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,131,5:04.628.954,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,132,5:04.630.865,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,133,5:04.630.954,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,134,5:04.632.866,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,135,5:04.632.954,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,136,5:04.634.866,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,137,5:04.634.954,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,138,5:04.636.866,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,139,5:04.636.955,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,140,5:04.638.866,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,141,5:04.638.954,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,142,5:04.640.866,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,143,5:04.640.955,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,144,5:04.642.867,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,145,5:04.642.955,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,146,5:04.644.867,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,147,5:04.644.955,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,148,5:04.646.867,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,149,5:04.646.955,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,150,5:04.648.868,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,151,5:04.648.956,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,152,5:04.650.867,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,153,5:04.650.956,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,154,5:04.652.868,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,155,5:04.652.956,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,156,5:04.654.868,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,157,5:04.654.956,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,158,5:04.656.868,88.500 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,159,5:04.656.957,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,160,5:04.658.868,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,161,5:04.658.956,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,162,5:04.660.869,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,163,5:04.660.957,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,164,5:04.662.869,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,165,5:04.662.957,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,166,5:04.664.869,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,167,5:04.664.958,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,168,5:04.666.869,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,169,5:04.666.957,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,170,5:04.668.869,88.350 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,171,5:04.668.958,128.150 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,172,5:04.670.870,88.550 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,173,5:04.670.959,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,174,5:04.672.870,88.300 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,175,5:04.672.958,128.200 us,2 B,,SP,36,Read Transaction,00 80*,"Read ModelCfg (0x0A3) = 0x8000 (Refresh=1 (model reload commanded), VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,176,5:04.674.870,88.400 us,1 B,,S,36,Write Transaction,A3,Set pointer ModelCfg (0x0A3)
+0,177,5:04.674.958,128.200 us,2 B,,SP,36,Read Transaction,00 00*,"Read ModelCfg (0x0A3) = 0x0000 (VChg=0 (charge termination 4.2V), ModelID=0 (lithium cobalt-oxide variants))"
+0,178,5:04.675.158,88.550 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,179,5:04.675.246,128.150 us,2 B,,SP,36,Read Transaction,02 00*,Read Status (0x000) = 0x0002 (POR=1 (power-on reset detected))
+0,180,5:04.675.381,169.150 us,3 B,,SP,36,Write Transaction,00 00 00,Write Status (0x000) = 0x0000 (no named flags set)
+0,181,5:04.675.558,88.300 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,182,5:04.675.646,128.150 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,183,5:04.675.844,88.500 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,184,5:04.675.932,128.200 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,185,5:04.676.068,169.200 us,3 B,,SP,36,Write Transaction,D7 00 32,"Write ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,186,5:04.676.244,88.300 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,187,5:04.676.333,128.150 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,188,5:04.676.568,88.550 us,1 B,,S,37,Write Transaction,C9,Set pointer nADCCfg (0x1C9)
+0,189,5:04.676.657,128.150 us,2 B,,SP,37,Read Transaction,10 00*,"Read nADCCfg (0x1C9) = 0x0010 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=0 (internal current sense))"
+0,190,5:04.676.791,168.750 us,3 B,,SP,37,Write Transaction,C9 14 00,"Write nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,191,5:04.676.967,88.300 us,1 B,,S,37,Write Transaction,C9,Set pointer nADCCfg (0x1C9)
+0,192,5:04.677.055,128.150 us,2 B,,SP,37,Read Transaction,14 00*,"Read nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,193,5:04.677.279,88.550 us,1 B,,S,36,Write Transaction,B8,Set pointer CGTempCo (0x0B8)
+0,194,5:04.677.367,128.200 us,2 B,,SP,36,Read Transaction,25 00*,Read CGTempCo (0x0B8) = 0x0025
+0,195,5:04.677.553,169.100 us,3 B,,SP,36,Write Transaction,B8 00 00,Write CGTempCo (0x0B8) = 0x0000
+0,196,5:04.677.729,88.400 us,1 B,,S,36,Write Transaction,B8,Set pointer CGTempCo (0x0B8)
+0,197,5:04.677.818,128.200 us,2 B,,SP,36,Read Transaction,00 00*,Read CGTempCo (0x0B8) = 0x0000
+0,198,5:04.678.133,88.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,199,5:04.678.222,128.200 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,200,5:04.678.407,169.100 us,3 B,,SP,36,Write Transaction,18 D8 0E,Write DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,201,5:04.678.583,88.450 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,202,5:04.678.672,128.150 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,203,5:04.678.807,88.300 us,1 B,,S,36,Write Transaction,D0,Set pointer nChgConfig0 (0x0D0)
+0,204,5:04.678.895,128.150 us,2 B,,SP,36,Read Transaction,05 8C*,"Read nChgConfig0 (0x0D0) = 0x8C05 (PQEN=1 (low-battery prequalification enabled), LSEL=0 (0.47uH inductor), RECYCLE_EN=1, FCHGTIME=4 (6 h), MODE=5 (charger on (step/JEITA controlled)))"
+0,205,5:04.679.139,88.550 us,1 B,,S,36,Write Transaction,D0,Set pointer nChgConfig0 (0x0D0)
+0,206,5:04.679.228,128.150 us,2 B,,SP,36,Read Transaction,05 8C*,"Read nChgConfig0 (0x0D0) = 0x8C05 (PQEN=1 (low-battery prequalification enabled), LSEL=0 (0.47uH inductor), RECYCLE_EN=1, FCHGTIME=4 (6 h), MODE=5 (charger on (step/JEITA controlled)))"
+0,207,5:04.679.363,169.000 us,3 B,,SP,36,Write Transaction,D0 05 CC,"Write nChgConfig0 (0x0D0) = 0xCC05 (PQEN=1 (low-battery prequalification enabled), LSEL=1 (1.0uH inductor), RECYCLE_EN=1, FCHGTIME=4 (6 h), MODE=5 (charger on (step/JEITA controlled)))"
+0,208,5:04.679.539,88.300 us,1 B,,S,36,Write Transaction,D0,Set pointer nChgConfig0 (0x0D0)
+0,209,5:04.679.627,128.200 us,2 B,,SP,36,Read Transaction,05 CC*,"Read nChgConfig0 (0x0D0) = 0xCC05 (PQEN=1 (low-battery prequalification enabled), LSEL=1 (1.0uH inductor), RECYCLE_EN=1, FCHGTIME=4 (6 h), MODE=5 (charger on (step/JEITA controlled)))"
+0,210,5:04.679.845,88.400 us,1 B,,S,37,Write Transaction,CA,Set pointer nThermCfg (0x1CA)
+0,211,5:04.679.933,128.150 us,2 B,,SP,37,Read Transaction,BE 71*,Read nThermCfg (0x1CA) = 0x71BE
+0,212,5:04.680.117,169.100 us,3 B,,SP,37,Write Transaction,CA B1 71,Write nThermCfg (0x1CA) = 0x71B1
+0,213,5:04.680.294,88.450 us,1 B,,S,37,Write Transaction,CA,Set pointer nThermCfg (0x1CA)
+0,214,5:04.680.382,128.150 us,2 B,,SP,37,Read Transaction,B1 71*,Read nThermCfg (0x1CA) = 0x71B1
+0,215,5:04.680.517,88.300 us,1 B,,S,37,Write Transaction,CA,Set pointer nThermCfg (0x1CA)
+0,216,5:04.680.605,128.200 us,2 B,,SP,37,Read Transaction,B1 71*,Read nThermCfg (0x1CA) = 0x71B1
+0,217,5:04.680.876,88.550 us,1 B,,S,37,Write Transaction,C4,Set pointer nStepCurr (0x1C4)
+0,218,5:04.680.964,128.200 us,2 B,,SP,37,Read Transaction,55 55*,"Read nStepCurr (0x1C4) = 0x5555 (StepCurr4=250 mA below step3, StepCurr3=250 mA below step2, StepCurr2=250 mA below step1, StepCurr1=500 mA below step0)"
+0,219,5:04.681.148,169.100 us,3 B,,SP,37,Write Transaction,C4 42 44,"Write nStepCurr (0x1C4) = 0x4442 (StepCurr4=200 mA below step3, StepCurr3=200 mA below step2, StepCurr2=200 mA below step1, StepCurr1=200 mA below step0)"
+0,220,5:04.681.324,88.400 us,1 B,,S,37,Write Transaction,C4,Set pointer nStepCurr (0x1C4)
+0,221,5:04.681.413,128.200 us,2 B,,SP,37,Read Transaction,42 44*,"Read nStepCurr (0x1C4) = 0x4442 (StepCurr4=200 mA below step3, StepCurr3=200 mA below step2, StepCurr2=200 mA below step1, StepCurr1=200 mA below step0)"
+0,222,5:04.681.631,88.550 us,1 B,,S,37,Write Transaction,C5,Set pointer nStepVolt (0x1C5)
+0,223,5:04.681.720,128.200 us,2 B,,SP,37,Read Transaction,55 55*,"Read nStepVolt (0x1C5) = 0x5555 (StepVolt0=50 mV below step1, StepVolt1=50 mV below step2, StepVolt2=50 mV below step3, StepVolt3=50 mV below step4)"
+0,224,5:04.681.904,169.150 us,3 B,,SP,37,Write Transaction,C5 55 55,"Write nStepVolt (0x1C5) = 0x5555 (StepVolt0=50 mV below step1, StepVolt1=50 mV below step2, StepVolt2=50 mV below step3, StepVolt3=50 mV below step4)"
+0,225,5:04.682.081,88.400 us,1 B,,S,37,Write Transaction,C5,Set pointer nStepVolt (0x1C5)
+0,226,5:04.682.169,128.200 us,2 B,,SP,37,Read Transaction,55 55*,"Read nStepVolt (0x1C5) = 0x5555 (StepVolt0=50 mV below step1, StepVolt1=50 mV below step2, StepVolt2=50 mV below step3, StepVolt3=50 mV below step4)"
+0,227,5:04.682.388,88.550 us,1 B,,S,37,Write Transaction,CC,Set pointer nVChgCfg1 (0x1CC)
+0,228,5:04.682.476,128.150 us,2 B,,SP,37,Read Transaction,D5 54*,"Read nVChgCfg1 (0x1CC) = 0x54D5 (WarmChargeVolt=50 mV below room, RoomChargeVolt=4170 mV, CoolChargeVolt=50 mV below room)"
+0,229,5:04.682.660,169.100 us,3 B,,SP,37,Write Transaction,CC 05 55,"Write nVChgCfg1 (0x1CC) = 0x5505 (WarmChargeVolt=50 mV below room, RoomChargeVolt=4200 mV, CoolChargeVolt=50 mV below room)"
+0,230,5:04.682.836,88.400 us,1 B,,S,37,Write Transaction,CC,Set pointer nVChgCfg1 (0x1CC)
+0,231,5:04.682.925,128.150 us,2 B,,SP,37,Read Transaction,05 55*,"Read nVChgCfg1 (0x1CC) = 0x5505 (WarmChargeVolt=50 mV below room, RoomChargeVolt=4200 mV, CoolChargeVolt=50 mV below room)"
+0,232,5:04.683.143,88.550 us,1 B,,S,37,Write Transaction,CD,Set pointer nVChgCfg2 (0x1CD)
+0,233,5:04.683.232,128.150 us,2 B,,SP,37,Read Transaction,55 55*,"Read nVChgCfg2 (0x1CD) = 0x5555 (Hot2ChargeVolt=50 mV below hot1, Hot1ChargeVolt=50 mV below warm, Cold1ChargeVolt=50 mV below cool, Cold2ChargeVolt=50 mV below cold1)"
+0,234,5:04.683.415,169.100 us,3 B,,SP,37,Write Transaction,CD 55 55,"Write nVChgCfg2 (0x1CD) = 0x5555 (Hot2ChargeVolt=50 mV below hot1, Hot1ChargeVolt=50 mV below warm, Cold1ChargeVolt=50 mV below cool, Cold2ChargeVolt=50 mV below cold1)"
+0,235,5:04.683.592,88.400 us,1 B,,S,37,Write Transaction,CD,Set pointer nVChgCfg2 (0x1CD)
+0,236,5:04.683.680,128.150 us,2 B,,SP,37,Read Transaction,55 55*,"Read nVChgCfg2 (0x1CD) = 0x5555 (Hot2ChargeVolt=50 mV below hot1, Hot1ChargeVolt=50 mV below warm, Cold1ChargeVolt=50 mV below cool, Cold2ChargeVolt=50 mV below cold1)"
+0,237,5:04.683.900,88.550 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,238,5:04.683.989,128.150 us,2 B,,SP,37,Read Transaction,E8 21*,"Read nIChgCfg1 (0x1CE) = 0x21E8 (WarmChargeCurr=200 mA below room, RoomChargeCurr=800 mA, CoolChargeCurr=400 mA below room)"
+0,239,5:04.684.172,169.150 us,3 B,,SP,37,Write Transaction,CE E8 23,"Write nIChgCfg1 (0x1CE) = 0x23E8 (WarmChargeCurr=200 mA below room, RoomChargeCurr=1600 mA, CoolChargeCurr=400 mA below room)"
+0,240,5:04.684.348,88.400 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,241,5:04.684.437,128.200 us,2 B,,SP,37,Read Transaction,E8 23*,"Read nIChgCfg1 (0x1CE) = 0x23E8 (WarmChargeCurr=200 mA below room, RoomChargeCurr=1600 mA, CoolChargeCurr=400 mA below room)"
+0,242,5:04.684.655,88.550 us,1 B,,S,37,Write Transaction,CF,Set pointer nIChgCfg2 (0x1CF)
+0,243,5:04.684.744,128.150 us,2 B,,SP,37,Read Transaction,55 55*,"Read nIChgCfg2 (0x1CF) = 0x5555 (Hot2ChargeCurr=250 mA below hot1, Hot1ChargeCurr=250 mA below warm, Cold1ChargeCurr=250 mA below cool, Cold2ChargeCurr=250 mA below cold1)"
+0,244,5:04.684.927,169.100 us,3 B,,SP,37,Write Transaction,CF 55 55,"Write nIChgCfg2 (0x1CF) = 0x5555 (Hot2ChargeCurr=250 mA below hot1, Hot1ChargeCurr=250 mA below warm, Cold1ChargeCurr=250 mA below cool, Cold2ChargeCurr=250 mA below cold1)"
+0,245,5:04.685.104,88.400 us,1 B,,S,37,Write Transaction,CF,Set pointer nIChgCfg2 (0x1CF)
+0,246,5:04.685.192,128.200 us,2 B,,SP,37,Read Transaction,55 55*,"Read nIChgCfg2 (0x1CF) = 0x5555 (Hot2ChargeCurr=250 mA below hot1, Hot1ChargeCurr=250 mA below warm, Cold1ChargeCurr=250 mA below cool, Cold2ChargeCurr=250 mA below cold1)"
+0,247,5:04.685.327,88.300 us,1 B,,S,37,Write Transaction,C9,Set pointer nADCCfg (0x1C9)
+0,248,5:04.685.416,128.150 us,2 B,,SP,37,Read Transaction,14 00*,"Read nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,249,5:04.685.666,88.550 us,1 B,,S,37,Write Transaction,C9,Set pointer nADCCfg (0x1C9)
+0,250,5:04.685.754,128.200 us,2 B,,SP,37,Read Transaction,14 00*,"Read nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,251,5:04.685.890,169.000 us,3 B,,SP,37,Write Transaction,C9 14 00,"Write nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,252,5:04.686.066,88.300 us,1 B,,S,37,Write Transaction,C9,Set pointer nADCCfg (0x1C9)
+0,253,5:04.686.154,128.200 us,2 B,,SP,37,Read Transaction,14 00*,"Read nADCCfg (0x1C9) = 0x0014 (R100=0 (10kOhm THM pullup), ThEn=1 (Temp reports THM thermistor), RsnsEn=1 (external sense resistor))"
+0,254,5:04.686.373,88.550 us,1 B,,S,37,Write Transaction,D5,Set pointer nTPrtTh2 (0x1D5)
+0,255,5:04.686.461,128.150 us,2 B,,SP,37,Read Transaction,15 71*,"Read nTPrtTh2 (0x1D5) = 0x7115 (Ttoohot=20 degC above Thot2, Thot2=5 degC above Thot1, Thot1=5 degC above Twarm, Twarm=15 degC above Troom)"
+0,256,5:04.686.645,169.100 us,3 B,,SP,37,Write Transaction,D5 17 51,"Write nTPrtTh2 (0x1D5) = 0x5117 (Ttoohot=15 degC above Thot2, Thot2=5 degC above Thot1, Thot1=5 degC above Twarm, Twarm=20 degC above Troom)"
+0,257,5:04.686.821,88.700 us,1 B,,S,37,Write Transaction,D5,Set pointer nTPrtTh2 (0x1D5)
+0,258,5:04.686.910,128.200 us,2 B,,SP,37,Read Transaction,17 51*,"Read nTPrtTh2 (0x1D5) = 0x5117 (Ttoohot=15 degC above Thot2, Thot2=5 degC above Thot1, Thot1=5 degC above Twarm, Twarm=20 degC above Troom)"
+0,259,5:04.687.133,88.550 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,260,5:04.687.222,128.200 us,2 B,,SP,37,Read Transaction,C1 40*,Read nChgCfg0 (0x1C2) = 0x40C1 (StepChgMode=0 (CV step charging))
+0,261,5:04.687.405,169.100 us,3 B,,SP,37,Write Transaction,C2 C1 00,Write nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,262,5:04.687.582,88.400 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,263,5:04.687.671,128.200 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,264,5:04.687.806,88.300 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,265,5:04.687.894,128.150 us,2 B,,SP,37,Read Transaction,E8 23*,"Read nIChgCfg1 (0x1CE) = 0x23E8 (WarmChargeCurr=200 mA below room, RoomChargeCurr=1600 mA, CoolChargeCurr=400 mA below room)"
+0,266,5:04.688.256,88.550 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,267,5:04.688.344,128.200 us,2 B,,SP,37,Read Transaction,E8 23*,"Read nIChgCfg1 (0x1CE) = 0x23E8 (WarmChargeCurr=200 mA below room, RoomChargeCurr=1600 mA, CoolChargeCurr=400 mA below room)"
+0,268,5:04.688.527,169.100 us,3 B,,SP,37,Write Transaction,CE 28 22,"Write nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,269,5:04.688.704,88.400 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,270,5:04.688.793,128.200 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,271,5:04.689.029,88.550 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,272,5:04.689.118,128.150 us,2 B,,SP,36,Read Transaction,02 00*,Read nChgConfig5 (0x0D5) = 0x0002 (ChgEnable=1 (charger enabled))
+0,273,5:04.689.253,169.000 us,3 B,,SP,36,Write Transaction,D5 03 00,"Write nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,274,5:04.689.428,88.300 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,275,5:04.689.517,128.200 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,276,5:04.689.750,88.550 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,277,5:04.689.838,128.150 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,278,5:04.689.974,168.950 us,3 B,,SP,36,Write Transaction,D5 03 00,"Write nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,279,5:04.690.150,88.300 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,280,5:04.690.238,128.200 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,281,5:04.690.374,88.300 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,282,5:04.690.462,128.150 us,2 B,,SP,36,Read Transaction,DC CF*,Read VCell (0x01A) = 0xCFDC (4157.188 mV)
+0,283,5:04.690.731,88.550 us,1 B,,S,37,Write Transaction,BB,Set pointer nHibCfg (0x1BB)
+0,284,5:04.690.819,128.150 us,2 B,,SP,37,Read Transaction,09 09*,"Read nHibCfg (0x1BB) = 0x0909 (EnHib=0 (hibernate disabled), HibEnterTime=0, HibThreshold=9, HibExitTime=1, HibScalar=1)"
+0,285,5:04.691.005,169.150 us,3 B,,SP,37,Write Transaction,BB 19 97,"Write nHibCfg (0x1BB) = 0x9719 (EnHib=1 (hibernate enabled), HibEnterTime=1, HibThreshold=7, HibExitTime=3, HibScalar=1)"
+0,286,5:04.691.182,88.400 us,1 B,,S,37,Write Transaction,BB,Set pointer nHibCfg (0x1BB)
+0,287,5:04.691.270,128.200 us,2 B,,SP,37,Read Transaction,19 97*,"Read nHibCfg (0x1BB) = 0x9719 (EnHib=1 (hibernate enabled), HibEnterTime=1, HibThreshold=7, HibExitTime=3, HibScalar=1)"
+0,288,5:08.833.372,86.950 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,289,5:08.833.459,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,290,5:08.844.311,86.850 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,291,5:08.844.398,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,292,5:08.855.312,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,293,5:08.855.399,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,294,5:08.866.313,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,295,5:08.866.400,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,296,5:08.877.314,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,297,5:08.877.401,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,298,5:08.888.315,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,299,5:08.888.402,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,300,5:08.899.317,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,301,5:08.899.404,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,302,5:08.910.318,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,303,5:08.910.405,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,304,5:08.921.319,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,305,5:08.921.406,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,306,5:08.932.320,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,307,5:08.932.407,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,308,5:08.943.321,86.700 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,309,5:08.943.408,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,310,5:08.954.322,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,311,5:08.954.409,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,312,5:08.965.324,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,313,5:08.965.411,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,314,5:08.976.325,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,315,5:08.976.412,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,316,5:08.987.326,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,317,5:08.987.413,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,318,5:08.998.327,86.700 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,319,5:08.998.414,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,320,5:09.009.328,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,321,5:09.009.415,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,322,5:09.020.329,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,323,5:09.020.416,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,324,5:09.031.331,86.500 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,325,5:09.031.417,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,326,5:09.042.332,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,327,5:09.042.419,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,328,5:09.053.333,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,329,5:09.053.420,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,330,5:09.064.334,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,331,5:09.064.421,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,332,5:09.075.335,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,333,5:09.075.422,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,334,5:09.086.336,86.700 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,335,5:09.086.423,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,336,5:09.097.338,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,337,5:09.097.425,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,338,5:09.108.339,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,339,5:09.108.426,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,340,5:09.119.340,86.650 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,341,5:09.119.426,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,342,5:09.130.341,86.600 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,343,5:09.130.428,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,344,5:09.141.342,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,345,5:09.141.429,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,346,5:09.152.343,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,347,5:09.152.430,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,348,5:09.163.345,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,349,5:09.163.432,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,350,5:09.174.345,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,351,5:09.174.433,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,352,5:09.185.347,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,353,5:09.185.434,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,354,5:09.196.348,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,355,5:09.196.435,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,356,5:09.207.349,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,357,5:09.207.436,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,358,5:09.218.350,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,359,5:09.218.437,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,360,5:09.229.352,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,361,5:09.229.439,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,362,5:09.240.353,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,363,5:09.240.440,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,364,5:09.251.354,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,365,5:09.251.441,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,366,5:09.262.355,87.050 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,367,5:09.262.442,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,368,5:09.273.356,86.650 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,369,5:09.273.443,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,370,5:09.374.599,125.500 us,2 B,,SP,2C,Write Transaction,08 28,Write Transaction at 0x2C: 08 28
+0,371,5:09.374.730,125.450 us,2 B,,SP,2C,Read Transaction,28 28*,Read Transaction at 0x2C: 28 28
+0,372,5:09.379.474,87.000 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,373,5:09.379.561,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,374,5:09.379.693,86.500 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,375,5:09.379.780,125.500 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,376,5:09.379.913,86.800 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,377,5:09.380.000,125.500 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,378,5:09.380.131,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,379,5:09.380.218,125.450 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,380,5:09.380.352,86.650 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,381,5:09.380.439,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,382,5:09.380.639,87.000 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,383,5:09.380.726,125.500 us,2 B,,SP,36,Read Transaction,AF D0*,Read VSys (0x052) = 0xD0AF (4173.672 mV)
+0,384,5:09.380.859,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,385,5:09.380.946,125.450 us,2 B,,SP,36,Read Transaction,7D 09*,Read ICHGIN (0x051) = 0x097D (379.5312 mA)
+0,386,5:09.381.079,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,387,5:09.381.166,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,388,5:09.381.448,87.000 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,389,5:09.381.535,125.450 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,390,5:09.381.708,86.950 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,391,5:09.381.795,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,392,5:09.381.990,87.000 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,393,5:09.382.077,125.450 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,394,5:09.382.293,86.550 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,395,5:09.382.379,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,396,5:09.382.686,86.950 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,397,5:09.382.773,125.500 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,398,5:09.382.905,86.850 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,399,5:09.382.991,125.500 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,400,5:09.383.241,86.950 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,401,5:09.383.328,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,402,5:09.383.506,86.950 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,403,5:09.383.593,125.500 us,2 B,,SP,36,Read Transaction,C7 D0*,Read VCell (0x01A) = 0xD0C7 (4175.547 mV)
+0,404,5:09.383.726,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,405,5:09.383.813,125.500 us,2 B,,SP,36,Read Transaction,44 02*,Read Current (0x01C) = 0x0244 (90.625 mA)
+0,406,5:09.383.947,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,407,5:09.384.034,125.450 us,2 B,,SP,36,Read Transaction,33 16*,Read Temp (0x01B) = 0x1633 (22.19922 degC)
+0,408,5:09.384.168,86.850 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,409,5:09.384.255,125.500 us,2 B,,SP,36,Read Transaction,26 16*,Read DieTemp (0x034) = 0x1626 (22.14844 degC)
+0,410,5:09.384.389,86.500 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,411,5:09.384.475,125.500 us,2 B,,SP,36,Read Transaction,00 64*,Read RepSOC (0x007) = 0x6400 (100 %)
+0,412,5:09.384.610,86.600 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,413,5:09.384.696,125.500 us,2 B,,SP,36,Read Transaction,15 0F*,Read RepCap (0x006) = 0x0F15 (1930.5 mAh)
+0,414,5:09.384.829,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,415,5:09.384.916,125.500 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,416,5:09.385.050,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,417,5:09.385.137,125.500 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,418,5:09.385.270,86.850 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,419,5:09.385.357,125.450 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,420,5:09.385.490,86.500 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,421,5:09.385.577,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,422,5:09.385.711,87.000 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,423,5:09.385.798,125.500 us,2 B,,SP,36,Read Transaction,15 0F*,Read FullCapRep (0x010) = 0x0F15 (1930.5 mAh)
+0,424,5:09.385.931,86.850 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,425,5:09.386.018,125.500 us,2 B,,SP,36,Read Transaction,16 0F*,Read VFRemCap (0x025) = 0x0F16 (1931 mAh)
+0,426,5:09.386.151,86.850 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,427,5:09.386.237,125.500 us,2 B,,SP,36,Read Transaction,A0 57*,Read VFSOC (0x0FF) = 0x57A0 (87.625 %)
+0,428,5:09.386.914,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,429,5:09.387.001,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,430,5:09.975.300,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,431,5:09.975.387,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,432,5:11.387.591,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,433,5:11.387.678,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,434,5:12.419.968,86.950 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,435,5:12.420.055,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,436,5:12.420.187,86.550 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,437,5:12.420.273,125.450 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,438,5:12.420.407,86.800 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,439,5:12.420.493,125.500 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,440,5:12.420.625,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,441,5:12.420.712,125.450 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,442,5:12.420.845,86.800 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,443,5:12.420.932,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,444,5:12.421.132,121.450 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,445,5:12.421.253,125.450 us,2 B,,SP,36,Read Transaction,CC D0*,Read VSys (0x052) = 0xD0CC (4175.938 mV)
+0,446,5:12.421.388,86.650 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,447,5:12.421.474,125.500 us,2 B,,SP,36,Read Transaction,E0 09*,Read ICHGIN (0x051) = 0x09E0 (395 mA)
+0,448,5:12.421.608,86.500 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,449,5:12.421.694,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,450,5:12.421.977,87.000 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,451,5:12.422.064,125.450 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,452,5:12.422.236,86.950 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,453,5:12.422.323,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,454,5:12.422.518,86.950 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,455,5:12.422.605,125.500 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,456,5:12.422.821,86.950 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,457,5:12.422.908,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,458,5:12.423.214,87.000 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,459,5:12.423.301,125.450 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,460,5:12.423.433,86.900 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,461,5:12.423.520,125.450 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,462,5:12.423.772,87.000 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,463,5:12.423.859,125.450 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,464,5:12.424.037,86.950 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,465,5:12.424.123,125.500 us,2 B,,SP,36,Read Transaction,D7 D0*,Read VCell (0x01A) = 0xD0D7 (4176.797 mV)
+0,466,5:12.424.257,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,467,5:12.424.344,125.450 us,2 B,,SP,36,Read Transaction,BB 02*,Read Current (0x01C) = 0x02BB (109.2188 mA)
+0,468,5:12.424.478,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,469,5:12.424.565,125.500 us,2 B,,SP,36,Read Transaction,3C 16*,Read Temp (0x01B) = 0x163C (22.23438 degC)
+0,470,5:12.424.700,86.900 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,471,5:12.424.787,125.450 us,2 B,,SP,36,Read Transaction,73 16*,Read DieTemp (0x034) = 0x1673 (22.44922 degC)
+0,472,5:12.424.920,86.550 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,473,5:12.425.007,125.450 us,2 B,,SP,36,Read Transaction,00 64*,Read RepSOC (0x007) = 0x6400 (100 %)
+0,474,5:12.425.141,86.650 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,475,5:12.425.228,125.450 us,2 B,,SP,36,Read Transaction,15 0F*,Read RepCap (0x006) = 0x0F15 (1930.5 mAh)
+0,476,5:12.425.360,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,477,5:12.425.447,125.500 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,478,5:12.425.581,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,479,5:12.425.668,125.450 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,480,5:12.425.802,86.850 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,481,5:12.425.889,125.500 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,482,5:12.426.022,86.500 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,483,5:12.426.108,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,484,5:12.426.242,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,485,5:12.426.329,125.500 us,2 B,,SP,36,Read Transaction,15 0F*,Read FullCapRep (0x010) = 0x0F15 (1930.5 mAh)
+0,486,5:12.426.462,86.850 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,487,5:12.426.549,125.500 us,2 B,,SP,36,Read Transaction,16 0F*,Read VFRemCap (0x025) = 0x0F16 (1931 mAh)
+0,488,5:12.426.682,86.600 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,489,5:12.426.768,125.500 us,2 B,,SP,36,Read Transaction,A0 57*,Read VFSOC (0x0FF) = 0x57A0 (87.625 %)
+0,490,5:13.388.793,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,491,5:13.388.880,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,492,5:15.454.193,86.950 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,493,5:15.454.280,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,494,5:15.454.412,86.550 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,495,5:15.454.498,125.450 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,496,5:15.454.632,86.800 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,497,5:15.454.718,125.500 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,498,5:15.454.874,86.850 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,499,5:15.454.961,125.450 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,500,5:15.455.095,86.550 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,501,5:15.455.182,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,502,5:15.455.382,86.950 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,503,5:15.455.469,125.500 us,2 B,,SP,36,Read Transaction,DE D0*,Read VSys (0x052) = 0xD0DE (4177.344 mV)
+0,504,5:15.455.602,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,505,5:15.455.689,125.500 us,2 B,,SP,36,Read Transaction,FA 09*,Read ICHGIN (0x051) = 0x09FA (399.0625 mA)
+0,506,5:15.455.822,86.850 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,507,5:15.455.909,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,508,5:15.456.192,86.950 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,509,5:15.456.279,125.500 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,510,5:15.456.453,87.000 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,511,5:15.456.540,125.450 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,512,5:15.456.735,87.000 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,513,5:15.456.822,125.450 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,514,5:15.457.039,86.950 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,515,5:15.457.126,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,516,5:15.457.433,86.950 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,517,5:15.457.520,125.500 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,518,5:15.457.652,86.850 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,519,5:15.457.739,125.500 us,2 B,,SP,36,Read Transaction,00 31*,"Read ChgDetails01 (0x0D7) = 0x3100 (BAT_DTLS=3 (battery OK), CHG_DTLS=1 (fast-charge constant current), BYP_DTLS=0 (BYP node OK))"
+0,520,5:15.457.989,86.950 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,521,5:15.458.076,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,522,5:15.458.254,86.950 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,523,5:15.458.341,125.500 us,2 B,,SP,36,Read Transaction,E1 D0*,Read VCell (0x01A) = 0xD0E1 (4177.578 mV)
+0,524,5:15.458.474,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,525,5:15.458.561,125.450 us,2 B,,SP,36,Read Transaction,62 02*,Read Current (0x01C) = 0x0262 (95.3125 mA)
+0,526,5:15.458.695,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,527,5:15.458.782,125.450 us,2 B,,SP,36,Read Transaction,40 16*,Read Temp (0x01B) = 0x1640 (22.25 degC)
+0,528,5:15.458.916,86.900 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,529,5:15.459.003,125.450 us,2 B,,SP,36,Read Transaction,A8 16*,Read DieTemp (0x034) = 0x16A8 (22.65625 degC)
+0,530,5:15.459.137,86.550 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,531,5:15.459.224,125.450 us,2 B,,SP,36,Read Transaction,03 64*,Read RepSOC (0x007) = 0x6403 (100.0117 %)
+0,532,5:15.459.358,86.650 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,533,5:15.459.444,125.450 us,2 B,,SP,36,Read Transaction,15 0F*,Read RepCap (0x006) = 0x0F15 (1930.5 mAh)
+0,534,5:15.459.577,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,535,5:15.459.664,125.450 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,536,5:15.459.798,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,537,5:15.459.885,125.450 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,538,5:15.460.019,86.900 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,539,5:15.460.106,125.450 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,540,5:15.460.239,86.500 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,541,5:15.460.325,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,542,5:15.460.459,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,543,5:15.460.546,125.450 us,2 B,,SP,36,Read Transaction,15 0F*,Read FullCapRep (0x010) = 0x0F15 (1930.5 mAh)
+0,544,5:15.460.679,86.850 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,545,5:15.460.766,125.500 us,2 B,,SP,36,Read Transaction,16 0F*,Read VFRemCap (0x025) = 0x0F16 (1931 mAh)
+0,546,5:15.460.899,86.900 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,547,5:15.460.986,125.450 us,2 B,,SP,36,Read Transaction,A2 57*,Read VFSOC (0x0FF) = 0x57A2 (87.63281 %)
+0,548,5:15.461.613,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,549,5:15.461.700,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,550,5:17.462.225,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,551,5:17.462.312,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,552,5:19.463.451,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,553,5:19.463.538,139.550 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,554,5:21.464.655,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,555,5:21.464.741,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,556,5:23.465.862,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,557,5:23.465.949,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,558,5:25.478.299,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,559,5:25.478.386,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,560,5:27.490.523,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,561,5:27.490.610,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,562,5:29.510.938,133.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,563,5:29.511.071,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,564,5:31.511.782,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,565,5:31.511.869,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,566,5:33.512.929,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,567,5:33.513.016,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,568,5:35.514.131,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,569,5:35.514.218,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,570,5:37.515.357,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,571,5:37.515.444,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,572,5:39.516.576,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,573,5:39.516.663,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,574,5:41.520.778,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,575,5:41.520.865,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,576,5:43.522.193,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,577,5:43.522.280,130.350 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,578,5:45.523.212,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,579,5:45.523.298,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,580,5:47.527.416,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,581,5:47.527.503,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,582,5:49.528.625,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,583,5:49.528.712,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,584,5:51.529.844,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,585,5:51.529.931,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,586,5:53.531.059,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,587,5:53.531.145,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,588,5:55.532.269,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,589,5:55.532.356,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,590,5:57.533.476,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,591,5:57.533.563,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,592,5:59.534.689,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,593,5:59.534.776,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,594,6:01.535.909,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,595,6:01.535.996,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,596,6:03.537.128,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,597,6:03.537.215,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,598,6:05.538.331,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,599,6:05.538.418,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,600,6:07.539.554,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,601,6:07.539.641,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,602,6:09.549.010,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,603,6:09.549.097,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,604,6:11.549.961,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,605,6:11.550.048,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,606,6:13.551.174,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,607,6:13.551.261,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,608,6:15.519.546,162.600 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,609,6:15.519.708,125.450 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,610,6:15.519.841,86.500 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,611,6:15.519.928,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,612,6:15.520.060,86.550 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,613,6:15.520.147,125.450 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,614,6:15.520.279,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,615,6:15.520.365,125.450 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,616,6:15.520.499,86.550 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,617,6:15.520.585,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,618,6:15.520.786,87.000 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,619,6:15.520.873,125.500 us,2 B,,SP,36,Read Transaction,0C D1*,Read VSys (0x052) = 0xD10C (4180.938 mV)
+0,620,6:15.521.006,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,621,6:15.521.093,125.450 us,2 B,,SP,36,Read Transaction,11 0A*,Read ICHGIN (0x051) = 0x0A11 (402.6562 mA)
+0,622,6:15.521.226,86.850 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,623,6:15.521.313,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,624,6:15.521.597,86.950 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,625,6:15.521.684,125.500 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,626,6:15.521.857,86.950 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,627,6:15.521.944,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,628,6:15.522.139,86.950 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,629,6:15.522.226,125.500 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,630,6:15.522.443,87.000 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,631,6:15.522.530,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,632,6:15.522.838,86.950 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,633,6:15.522.925,125.500 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,634,6:15.523.057,86.850 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,635,6:15.523.143,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,636,6:15.523.395,87.000 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,637,6:15.523.482,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,638,6:15.523.660,87.000 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,639,6:15.523.747,125.500 us,2 B,,SP,36,Read Transaction,F6 D0*,Read VCell (0x01A) = 0xD0F6 (4179.219 mV)
+0,640,6:15.523.880,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,641,6:15.523.967,125.500 us,2 B,,SP,36,Read Transaction,EA 01*,Read Current (0x01C) = 0x01EA (76.5625 mA)
+0,642,6:15.524.101,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,643,6:15.524.188,125.450 us,2 B,,SP,36,Read Transaction,33 16*,Read Temp (0x01B) = 0x1633 (22.19922 degC)
+0,644,6:15.524.322,86.550 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,645,6:15.524.409,125.450 us,2 B,,SP,36,Read Transaction,8C 19*,Read DieTemp (0x034) = 0x198C (25.54688 degC)
+0,646,6:15.524.543,86.550 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,647,6:15.524.630,125.500 us,2 B,,SP,36,Read Transaction,03 64*,Read RepSOC (0x007) = 0x6403 (100.0117 %)
+0,648,6:15.524.764,86.650 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,649,6:15.524.851,125.500 us,2 B,,SP,36,Read Transaction,18 0F*,Read RepCap (0x006) = 0x0F18 (1932 mAh)
+0,650,6:15.524.983,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,651,6:15.525.070,125.500 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,652,6:15.525.204,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,653,6:15.525.291,125.500 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,654,6:15.525.425,86.850 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,655,6:15.525.512,125.500 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,656,6:15.525.645,86.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,657,6:15.525.731,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,658,6:15.525.865,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,659,6:15.525.952,125.500 us,2 B,,SP,36,Read Transaction,18 0F*,Read FullCapRep (0x010) = 0x0F18 (1932 mAh)
+0,660,6:15.526.085,86.900 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,661,6:15.526.172,125.450 us,2 B,,SP,36,Read Transaction,18 0F*,Read VFRemCap (0x025) = 0x0F18 (1932 mAh)
+0,662,6:15.526.305,86.500 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,663,6:15.526.391,125.500 us,2 B,,SP,36,Read Transaction,AF 57*,Read VFSOC (0x0FF) = 0x57AF (87.68359 %)
+0,664,6:15.552.408,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,665,6:15.552.495,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,666,6:17.553.622,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,667,6:17.553.709,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,668,6:19.554.830,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,669,6:19.554.917,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,670,6:21.556.029,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,671,6:21.556.116,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,672,6:23.557.263,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,673,6:23.557.350,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,674,6:25.558.467,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,675,6:25.558.554,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,676,6:27.559.684,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,677,6:27.559.771,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,678,6:29.560.881,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,679,6:29.560.968,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,680,6:31.580.251,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,681,6:31.580.338,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,682,6:33.581.329,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,683,6:33.581.416,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,684,6:35.599.229,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,685,6:35.599.316,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,686,6:37.599.751,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,687,6:37.599.838,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,688,6:39.600.974,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,689,6:39.601.061,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,690,6:41.602.171,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,691,6:41.602.258,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,692,6:43.603.390,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,693,6:43.603.477,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,694,6:45.604.618,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,695,6:45.604.705,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,696,6:47.605.829,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,697,6:47.605.916,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,698,6:49.607.038,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,699,6:49.607.125,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,700,6:51.630.889,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,701,6:51.630.976,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,702,6:53.631.474,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,703,6:53.631.561,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,704,6:55.632.686,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,705,6:55.632.773,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,706,6:57.633.897,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,707,6:57.633.984,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,708,6:59.635.101,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,709,6:59.635.188,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,710,7:01.636.319,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,711,7:01.636.406,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,712,7:03.637.535,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,713,7:03.637.622,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,714,7:05.638.754,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,715,7:05.638.841,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,716,7:07.755.397,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,717,7:07.755.484,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,718,7:09.756.181,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,719,7:09.756.267,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,720,7:11.757.414,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,721,7:11.757.501,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,722,7:13.758.615,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,723,7:13.758.702,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,724,7:15.543.837,121.800 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,725,7:15.543.959,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,726,7:15.544.091,86.500 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,727,7:15.544.178,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,728,7:15.544.310,86.550 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,729,7:15.544.397,125.450 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,730,7:15.544.529,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,731,7:15.544.616,125.500 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,732,7:15.544.749,86.750 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,733,7:15.544.836,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,734,7:15.545.036,87.000 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,735,7:15.545.123,125.450 us,2 B,,SP,36,Read Transaction,07 D1*,Read VSys (0x052) = 0xD107 (4180.547 mV)
+0,736,7:15.545.257,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,737,7:15.545.344,125.500 us,2 B,,SP,36,Read Transaction,F5 09*,Read ICHGIN (0x051) = 0x09F5 (398.2812 mA)
+0,738,7:15.545.477,86.850 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,739,7:15.545.564,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,740,7:15.545.849,86.950 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,741,7:15.545.936,125.500 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,742,7:15.546.110,87.000 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,743,7:15.546.197,125.450 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,744,7:15.546.393,86.950 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,745,7:15.546.480,125.500 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,746,7:15.546.696,86.950 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,747,7:15.546.783,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,748,7:15.547.092,87.000 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,749,7:15.547.179,125.500 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,750,7:15.547.311,86.850 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,751,7:15.547.398,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,752,7:15.547.649,86.950 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,753,7:15.547.736,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,754,7:15.547.915,86.950 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,755,7:15.548.002,125.500 us,2 B,,SP,36,Read Transaction,FA D0*,Read VCell (0x01A) = 0xD0FA (4179.531 mV)
+0,756,7:15.548.136,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,757,7:15.548.222,125.500 us,2 B,,SP,36,Read Transaction,D9 01*,Read Current (0x01C) = 0x01D9 (73.90625 mA)
+0,758,7:15.548.357,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,759,7:15.548.443,125.450 us,2 B,,SP,36,Read Transaction,34 16*,Read Temp (0x01B) = 0x1634 (22.20312 degC)
+0,760,7:15.548.577,86.900 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,761,7:15.548.664,125.450 us,2 B,,SP,36,Read Transaction,8E 1B*,Read DieTemp (0x034) = 0x1B8E (27.55469 degC)
+0,762,7:15.548.799,86.550 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,763,7:15.548.885,125.500 us,2 B,,SP,36,Read Transaction,00 64*,Read RepSOC (0x007) = 0x6400 (100 %)
+0,764,7:15.549.019,86.600 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,765,7:15.549.106,125.500 us,2 B,,SP,36,Read Transaction,1B 0F*,Read RepCap (0x006) = 0x0F1B (1933.5 mAh)
+0,766,7:15.549.239,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,767,7:15.549.326,125.500 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,768,7:15.549.460,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,769,7:15.549.546,125.500 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,770,7:15.549.680,86.900 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,771,7:15.549.767,125.450 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,772,7:15.549.900,86.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,773,7:15.549.987,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,774,7:15.550.120,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,775,7:15.550.207,125.500 us,2 B,,SP,36,Read Transaction,1B 0F*,Read FullCapRep (0x010) = 0x0F1B (1933.5 mAh)
+0,776,7:15.550.340,86.900 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,777,7:15.550.427,125.500 us,2 B,,SP,36,Read Transaction,1B 0F*,Read VFRemCap (0x025) = 0x0F1B (1933.5 mAh)
+0,778,7:15.550.560,86.850 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,779,7:15.550.647,125.500 us,2 B,,SP,36,Read Transaction,BC 57*,Read VFSOC (0x0FF) = 0x57BC (87.73438 %)
+0,780,7:15.759.833,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,781,7:15.759.920,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,782,7:17.761.050,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,783,7:17.761.137,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,784,7:19.762.272,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,785,7:19.762.359,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,786,7:21.763.486,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,787,7:21.763.573,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,788,7:23.767.692,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,789,7:23.767.779,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,790,7:25.878.140,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,791,7:25.878.227,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,792,7:27.896.346,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,793,7:27.896.433,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,794,7:29.897.348,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,795,7:29.897.435,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,796,7:31.902.755,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,797,7:31.902.842,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,798,7:33.903.789,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,799,7:33.903.876,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,800,7:35.904.984,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,801,7:35.905.071,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,802,7:37.906.206,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,803,7:37.906.293,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,804,7:39.907.433,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,805,7:39.907.520,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,806,7:41.908.640,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,807,7:41.908.727,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,808,7:43.913.854,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,809,7:43.913.941,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,810,7:46.025.399,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,811,7:46.025.486,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,812,7:48.057.357,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,813,7:48.057.444,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,814,7:50.060.783,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,815,7:50.060.870,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,816,7:52.061.732,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,817,7:52.061.819,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,818,7:54.062.939,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,819,7:54.063.026,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,820,7:56.064.171,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,821,7:56.064.258,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,822,7:58.065.374,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,823,7:58.065.461,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,824,8:00.066.586,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,825,8:00.066.673,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,826,8:02.067.809,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,827,8:02.067.896,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,828,8:04.069.010,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,829,8:04.069.097,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,830,8:06.070.238,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,831,8:06.070.325,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,832,8:08.071.442,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,833,8:08.071.529,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,834,8:10.072.669,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,835,8:10.072.756,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,836,8:12.073.889,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,837,8:12.073.976,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,838,8:14.075.095,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,839,8:14.075.181,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,840,8:15.653.868,87.000 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,841,8:15.653.955,125.450 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,842,8:15.654.087,86.550 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,843,8:15.654.174,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,844,8:15.654.307,125.450 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,845,8:15.654.432,125.500 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,846,8:15.654.565,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,847,8:15.654.651,125.500 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,848,8:15.654.785,86.500 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,849,8:15.654.871,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,850,8:15.655.072,87.000 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,851,8:15.655.159,125.450 us,2 B,,SP,36,Read Transaction,0B D1*,Read VSys (0x052) = 0xD10B (4180.859 mV)
+0,852,8:15.655.293,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,853,8:15.655.380,125.450 us,2 B,,SP,36,Read Transaction,E9 09*,Read ICHGIN (0x051) = 0x09E9 (396.4062 mA)
+0,854,8:15.655.514,86.850 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,855,8:15.655.600,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,856,8:15.655.883,86.950 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,857,8:15.655.970,125.500 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,858,8:15.656.144,87.000 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,859,8:15.656.231,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,860,8:15.656.427,87.000 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,861,8:15.656.514,125.500 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,862,8:15.656.731,86.950 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,863,8:15.656.818,125.500 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,864,8:15.657.126,87.000 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,865,8:15.657.213,125.450 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,866,8:15.657.346,86.850 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,867,8:15.657.433,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,868,8:15.657.684,87.000 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,869,8:15.657.771,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,870,8:15.657.949,86.950 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,871,8:15.658.036,125.500 us,2 B,,SP,36,Read Transaction,FF D0*,Read VCell (0x01A) = 0xD0FF (4179.922 mV)
+0,872,8:15.658.170,86.500 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,873,8:15.658.256,125.500 us,2 B,,SP,36,Read Transaction,D4 01*,Read Current (0x01C) = 0x01D4 (73.125 mA)
+0,874,8:15.658.391,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,875,8:15.658.478,125.500 us,2 B,,SP,36,Read Transaction,49 16*,Read Temp (0x01B) = 0x1649 (22.28516 degC)
+0,876,8:15.658.612,86.850 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,877,8:15.658.699,125.500 us,2 B,,SP,36,Read Transaction,F1 1C*,Read DieTemp (0x034) = 0x1CF1 (28.94141 degC)
+0,878,8:15.658.832,86.550 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,879,8:15.658.919,125.500 us,2 B,,SP,36,Read Transaction,00 64*,Read RepSOC (0x007) = 0x6400 (100 %)
+0,880,8:15.659.053,86.600 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,881,8:15.659.140,125.500 us,2 B,,SP,36,Read Transaction,1D 0F*,Read RepCap (0x006) = 0x0F1D (1934.5 mAh)
+0,882,8:15.659.273,86.850 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,883,8:15.659.360,125.500 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,884,8:15.659.494,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,885,8:15.659.580,125.500 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,886,8:15.659.714,86.850 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,887,8:15.659.801,125.500 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,888,8:15.659.934,86.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,889,8:15.660.020,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,890,8:15.660.154,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,891,8:15.660.241,125.500 us,2 B,,SP,36,Read Transaction,1D 0F*,Read FullCapRep (0x010) = 0x0F1D (1934.5 mAh)
+0,892,8:15.660.374,86.850 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,893,8:15.660.461,125.500 us,2 B,,SP,36,Read Transaction,1D 0F*,Read VFRemCap (0x025) = 0x0F1D (1934.5 mAh)
+0,894,8:15.660.594,86.850 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,895,8:15.660.681,125.500 us,2 B,,SP,36,Read Transaction,C9 57*,Read VFSOC (0x0FF) = 0x57C9 (87.78516 %)
+0,896,8:16.077.318,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,897,8:16.077.405,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,898,8:18.188.675,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,899,8:18.188.762,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,900,8:20.202.174,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,901,8:20.202.261,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,902,8:22.214.986,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,903,8:22.215.073,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,904,8:24.216.194,131.450 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,905,8:24.216.325,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,906,8:26.217.394,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,907,8:26.217.481,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,908,8:28.218.631,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,909,8:28.218.718,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,910,8:30.219.845,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,911,8:30.219.932,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,912,8:32.221.042,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,913,8:32.221.129,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,914,8:34.222.259,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,915,8:34.222.346,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,916,8:36.223.479,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,917,8:36.223.566,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,918,8:38.224.688,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,919,8:38.224.775,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,920,8:40.225.910,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,921,8:40.225.997,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,922,8:42.227.129,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,923,8:42.227.216,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,924,8:44.228.352,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,925,8:44.228.439,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,926,8:46.229.557,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,927,8:46.229.644,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,928,8:48.230.771,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,929,8:48.230.858,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,930,8:50.231.997,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,931,8:50.232.084,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,932,8:52.233.203,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,933,8:52.233.290,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,934,8:54.240.586,131.250 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,935,8:54.240.717,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,936,8:56.241.642,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,937,8:56.241.729,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,938,8:58.252.961,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,939,8:58.253.047,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,940,9:00.254.062,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,941,9:00.254.149,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,942,9:02.255.282,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,943,9:02.255.369,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,944,9:04.256.510,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,945,9:04.256.596,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,946,9:06.257.718,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,947,9:06.257.805,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,948,9:08.258.943,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,949,9:08.259.030,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,950,9:10.260.146,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,951,9:10.260.233,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,952,9:12.264.366,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,953,9:12.264.453,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,954,9:14.265.582,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,955,9:14.265.669,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,956,9:15.663.846,87.000 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,957,9:15.663.933,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,958,9:15.664.065,126.800 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,959,9:15.664.192,125.500 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,960,9:15.664.325,86.600 us,1 B,,S,37,Write Transaction,9D,Set pointer nFilterCfg (0x19D)
+0,961,9:15.664.411,125.500 us,2 B,,SP,37,Read Transaction,A4 CE*,"Read nFilterCfg (0x19D) = 0xCEA4 (TEMP=1, MIX=13, VOLT=2, CURR=4)"
+0,962,9:15.664.543,86.550 us,1 B,,S,36,Write Transaction,2F,Set pointer LearnCfg (0x02F)
+0,963,9:15.664.630,125.500 us,2 B,,SP,36,Read Transaction,86 46*,"Read LearnCfg (0x02F) = 0x4686 (FiltEmpty=0 (detect empty using VCell), LearnStage=0, MixEn=1 (MixEn enabled))"
+0,964,9:15.664.763,86.650 us,1 B,,S,36,Write Transaction,00,Set pointer Status (0x000)
+0,965,9:15.664.850,125.450 us,2 B,,SP,36,Read Transaction,00 00*,Read Status (0x000) = 0x0000 (no named flags set)
+0,966,9:15.665.051,87.000 us,1 B,,S,36,Write Transaction,52,Set pointer VSys (0x052)
+0,967,9:15.665.138,125.500 us,2 B,,SP,36,Read Transaction,0E D1*,Read VSys (0x052) = 0xD10E (4181.094 mV)
+0,968,9:15.665.271,86.800 us,1 B,,S,36,Write Transaction,51,Set pointer ICHGIN (0x051)
+0,969,9:15.665.358,125.500 us,2 B,,SP,36,Read Transaction,D0 09*,Read ICHGIN (0x051) = 0x09D0 (392.5 mA)
+0,970,9:15.665.492,86.900 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,971,9:15.665.578,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,972,9:15.665.863,86.950 us,1 B,,S,36,Write Transaction,D5,Set pointer nChgConfig5 (0x0D5)
+0,973,9:15.665.950,125.500 us,2 B,,SP,36,Read Transaction,03 00*,"Read nChgConfig5 (0x0D5) = 0x0003 (ChgEnable=1 (charger enabled), CCDetEn=1 (CC pin detection enabled))"
+0,974,9:15.666.124,86.950 us,1 B,,S,36,Write Transaction,3A,Set pointer ProtStatus (0x03A)
+0,975,9:15.666.211,125.500 us,2 B,,SP,36,Read Transaction,00 00*,Read ProtStatus (0x03A) = 0x0000 (no named flags set)
+0,976,9:15.666.407,87.000 us,1 B,,S,36,Write Transaction,3E,Set pointer FProtStat (0x03E)
+0,977,9:15.666.494,125.450 us,2 B,,SP,36,Read Transaction,00 06*,"Read FProtStat (0x03E) = 0x0600 (StepID=4 (step 4), Tempid=0 (Room))"
+0,978,9:15.666.710,86.900 us,1 B,,S,36,Write Transaction,D6,Set pointer ChgDetails00 (0x0D6)
+0,979,9:15.666.797,125.450 us,2 B,,SP,36,Read Transaction,60 DD*,"Read ChgDetails00 (0x0D6) = 0xDD60 (AICL_OK=1 (not in AICL mode), CHGIN_OK=1 (CHGIN valid), CHG_OK=1 (charging or charger off), BAT_OK=1 (BAT_DTLS 0x3, 0x4 or 0x7), BYP_OK=1 (BYP node OK), CHGIN_DTLS=3 (VCHGIN valid), CHGEN=0 (CHGEN pin high))"
+0,980,9:15.667.106,87.000 us,1 B,,S,37,Write Transaction,C2,Set pointer nChgCfg0 (0x1C2)
+0,981,9:15.667.193,125.500 us,2 B,,SP,37,Read Transaction,C1 00*,Read nChgCfg0 (0x1C2) = 0x00C1 (StepChgMode=0 (CV step charging))
+0,982,9:15.667.325,86.900 us,1 B,,S,36,Write Transaction,D7,Set pointer ChgDetails01 (0x0D7)
+0,983,9:15.667.412,125.450 us,2 B,,SP,36,Read Transaction,00 32*,"Read ChgDetails01 (0x0D7) = 0x3200 (BAT_DTLS=3 (battery OK), CHG_DTLS=2 (fast-charge constant voltage), BYP_DTLS=0 (BYP node OK))"
+0,984,9:15.667.663,86.500 us,1 B,,S,37,Write Transaction,CE,Set pointer nIChgCfg1 (0x1CE)
+0,985,9:15.667.750,125.500 us,2 B,,SP,37,Read Transaction,28 22*,"Read nIChgCfg1 (0x1CE) = 0x2228 (WarmChargeCurr=200 mA below room, RoomChargeCurr=900 mA, CoolChargeCurr=400 mA below room)"
+0,986,9:15.667.929,87.000 us,1 B,,S,36,Write Transaction,1A,Set pointer VCell (0x01A)
+0,987,9:15.668.016,125.450 us,2 B,,SP,36,Read Transaction,03 D1*,Read VCell (0x01A) = 0xD103 (4180.234 mV)
+0,988,9:15.668.149,86.800 us,1 B,,S,36,Write Transaction,1C,Set pointer Current (0x01C)
+0,989,9:15.668.236,125.500 us,2 B,,SP,36,Read Transaction,8E 01*,Read Current (0x01C) = 0x018E (62.1875 mA)
+0,990,9:15.668.370,86.800 us,1 B,,S,36,Write Transaction,1B,Set pointer Temp (0x01B)
+0,991,9:15.668.457,125.500 us,2 B,,SP,36,Read Transaction,61 16*,Read Temp (0x01B) = 0x1661 (22.37891 degC)
+0,992,9:15.668.591,86.850 us,1 B,,S,36,Write Transaction,34,Set pointer DieTemp (0x034)
+0,993,9:15.668.678,125.500 us,2 B,,SP,36,Read Transaction,00 1E*,Read DieTemp (0x034) = 0x1E00 (30 degC)
+0,994,9:15.668.812,86.500 us,1 B,,S,36,Write Transaction,07,Set pointer RepSOC (0x007)
+0,995,9:15.668.898,125.500 us,2 B,,SP,36,Read Transaction,03 64*,Read RepSOC (0x007) = 0x6403 (100.0117 %)
+0,996,9:15.669.033,86.600 us,1 B,,S,36,Write Transaction,06,Set pointer RepCap (0x006)
+0,997,9:15.669.119,125.500 us,2 B,,SP,36,Read Transaction,1F 0F*,Read RepCap (0x006) = 0x0F1F (1935.5 mAh)
+0,998,9:15.669.252,86.900 us,1 B,,S,36,Write Transaction,2A,Set pointer ChargingVoltage (0x02A)
+0,999,9:15.669.339,125.450 us,2 B,,SP,36,Read Transaction,00 D2*,Read ChargingVoltage (0x02A) = 0xD200 (4200 mV)
+0,1000,9:15.669.473,86.800 us,1 B,,S,36,Write Transaction,28,Set pointer ChargingCurrent (0x028)
+0,1001,9:15.669.559,125.500 us,2 B,,SP,36,Read Transaction,80 02*,Read ChargingCurrent (0x028) = 0x0280 (100 mA)
+0,1002,9:15.669.693,86.850 us,1 B,,S,36,Write Transaction,29,Set pointer IChgTerm (0x029)
+0,1003,9:15.669.780,125.500 us,2 B,,SP,36,Read Transaction,80 0C*,Read IChgTerm (0x029) = 0x0C80 (500 mA)
+0,1004,9:15.669.913,86.550 us,1 B,,S,36,Write Transaction,18,Set pointer DesignCap (0x018)
+0,1005,9:15.669.999,125.500 us,2 B,,SP,36,Read Transaction,D8 0E*,Read DesignCap (0x018) = 0x0ED8 (1900 mAh)
+0,1006,9:15.670.133,87.050 us,1 B,,S,36,Write Transaction,10,Set pointer FullCapRep (0x010)
+0,1007,9:15.670.220,125.450 us,2 B,,SP,36,Read Transaction,1F 0F*,Read FullCapRep (0x010) = 0x0F1F (1935.5 mAh)
+0,1008,9:15.670.353,86.850 us,1 B,,S,36,Write Transaction,25,Set pointer VFRemCap (0x025)
+0,1009,9:15.670.440,125.500 us,2 B,,SP,36,Read Transaction,1F 0F*,Read VFRemCap (0x025) = 0x0F1F (1935.5 mAh)
+0,1010,9:15.670.573,86.850 us,1 B,,S,36,Write Transaction,FF,Set pointer VFSOC (0x0FF)
+0,1011,9:15.670.660,125.500 us,2 B,,SP,36,Read Transaction,D6 57*,Read VFSOC (0x0FF) = 0x57D6 (87.83594 %)
+0,1012,9:16.266.863,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1013,9:16.266.950,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1014,9:18.268.011,122.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1015,9:18.268.134,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1016,9:20.269.236,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1017,9:20.269.323,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1018,9:22.270.445,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1019,9:22.270.532,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1020,9:24.271.666,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1021,9:24.271.753,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1022,9:26.272.888,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1023,9:26.272.975,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1024,9:28.274.087,122.700 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1025,9:28.274.209,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1026,9:30.275.306,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1027,9:30.275.393,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1028,9:32.276.516,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1029,9:32.276.603,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1030,9:34.277.738,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1031,9:34.277.825,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1032,9:36.278.955,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1033,9:36.279.042,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1034,9:38.280.169,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1035,9:38.280.256,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1036,9:40.281.391,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1037,9:40.281.478,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1038,9:42.282.602,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1039,9:42.282.689,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1040,9:44.283.816,86.500 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1041,9:44.283.903,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1042,9:46.394.613,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1043,9:46.394.700,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1044,9:48.395.277,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1045,9:48.395.364,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1046,9:50.413.948,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1047,9:50.414.035,125.450 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1048,9:52.414.693,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1049,9:52.414.780,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1050,9:54.428.648,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1051,9:54.428.735,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1052,9:56.429.136,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1053,9:56.429.223,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1054,9:58.430.363,86.950 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1055,9:58.430.450,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1056,10:00.431.563,87.000 us,1 B,,S,36,Write Transaction,D8,Set pointer UsbDetails (0x0D8)
+0,1057,10:00.431.650,125.500 us,2 B,,SP,36,Read Transaction,77 23*,"Read UsbDetails (0x0D8) = 0x2377 (CHGTYP=1 (SDP (500mA)), PRCHGTYP=0 (no proprietary charger), CC_CURR=3 (3.0A), USB_INLIM=3000 mA)"
+0,1058,10:02.322.131,,,,,,Capture stopped,[09/01/26 11:10:21],Capture stopped [09/01/26 11:10:21]

@@ -1,0 +1,910 @@
+{
+  "device": "MAX77972",
+  "source": "MAX77972 datasheet Rev 1 (1/25), Register Map sections FG_FUNC_MAP and FG_DEBUG_MAP",
+  "word_size": 2,
+  "endian": "little",
+  "addresses": {
+    "0x36": {"name": "FG_FUNC_MAP", "offset_bias": 0},
+    "0x37": {"name": "FG_DEBUG_MAP", "offset_bias": 256}
+  },
+  "registers": {
+    "0x000": {
+      "name": "Status",
+      "format": "bits",
+      "fields": [
+        {"name": "Br", "lsb": 15, "width": 1, "values": {"0x1": "battery removal detected"}},
+        {"name": "Smx", "lsb": 14, "width": 1, "values": {"0x1": "SOC above SAlrtTh maximum"}},
+        {"name": "Tmx", "lsb": 13, "width": 1, "values": {"0x1": "temperature above TAlrtTh maximum"}},
+        {"name": "Vmx", "lsb": 12, "width": 1, "values": {"0x1": "voltage above VAlrtTh maximum"}},
+        {"name": "Bi", "lsb": 11, "width": 1, "values": {"0x1": "battery insertion detected"}},
+        {"name": "Smn", "lsb": 10, "width": 1, "values": {"0x1": "SOC below SAlrtTh minimum"}},
+        {"name": "Tmn", "lsb": 9, "width": 1, "values": {"0x1": "temperature below TAlrtTh minimum"}},
+        {"name": "Vmn", "lsb": 8, "width": 1, "values": {"0x1": "voltage below VAlrtTh minimum"}},
+        {"name": "dSOCi", "lsb": 7, "width": 1, "values": {"0x1": "1% SOC change"}},
+        {"name": "Imx", "lsb": 6, "width": 1, "values": {"0x1": "current above IAlrtTh maximum"}},
+        {"name": "Bst", "lsb": 3, "width": 1, "values": {"0x1": "battery absent"}},
+        {"name": "Imn", "lsb": 2, "width": 1, "values": {"0x1": "current below IAlrtTh minimum"}},
+        {"name": "POR", "lsb": 1, "width": 1, "values": {"0x1": "power-on reset detected"}}
+      ]
+    },
+    "0x001": {
+      "name": "ChgMaskSts",
+      "format": "bits",
+      "fields": [
+        {"name": "AICL_M", "lsb": 15, "width": 1, "show_zero": true, "values": {"0x0": "AICL_I unmasked", "0x1": "AICL_I masked"}},
+        {"name": "CHGIN_M", "lsb": 14, "width": 1, "show_zero": true, "values": {"0x0": "CHGIN_I unmasked", "0x1": "CHGIN_I masked"}},
+        {"name": "CHG_M", "lsb": 12, "width": 1, "show_zero": true, "values": {"0x0": "CHG_I unmasked", "0x1": "CHG_I masked"}},
+        {"name": "BAT_M", "lsb": 11, "width": 1, "show_zero": true, "values": {"0x0": "BAT_I unmasked", "0x1": "BAT_I masked"}},
+        {"name": "BYP_M", "lsb": 8, "width": 1, "show_zero": true, "values": {"0x0": "BYP_I unmasked", "0x1": "BYP_I masked"}},
+        {"name": "AICL_I", "lsb": 7, "width": 1, "values": {"0x1": "AICL_OK changed"}},
+        {"name": "CHGIN_I", "lsb": 6, "width": 1, "values": {"0x1": "CHGIN_OK changed"}},
+        {"name": "CHG_I", "lsb": 4, "width": 1, "values": {"0x1": "CHG_OK changed"}},
+        {"name": "BAT_I", "lsb": 3, "width": 1, "values": {"0x1": "BAT_OK changed"}},
+        {"name": "BYP_I", "lsb": 0, "width": 1, "values": {"0x1": "BYP_OK changed"}}
+      ]
+    },
+    "0x003": {
+      "name": "VAlrtTh",
+      "format": "bits",
+      "fields": [
+        {"name": "VMAX", "lsb": 8, "width": 8, "scale": 20, "unit": "mV"},
+        {"name": "VMIN", "lsb": 0, "width": 8, "scale": 20, "unit": "mV"}
+      ]
+    },
+    "0x004": {
+      "name": "TAlrtTh",
+      "format": "bits",
+      "fields": [
+        {"name": "TMAX", "lsb": 8, "width": 8, "signed": true, "scale": 1, "unit": "degC"},
+        {"name": "TMIN", "lsb": 0, "width": 8, "signed": true, "scale": 1, "unit": "degC"}
+      ]
+    },
+    "0x005": {
+      "name": "SAlrtTh",
+      "format": "bits",
+      "fields": [
+        {"name": "SMAX", "lsb": 8, "width": 8, "scale": 1, "unit": "%"},
+        {"name": "SMIN", "lsb": 0, "width": 8, "scale": 1, "unit": "%"}
+      ]
+    },
+    "0x006": {"name": "RepCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x007": {"name": "RepSOC", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x008": {"name": "IDVolt", "format": "hex"},
+    "0x009": {
+      "name": "MaxMinTemp",
+      "format": "bits",
+      "fields": [
+        {"name": "MaxTemperature", "lsb": 8, "width": 8, "signed": true, "scale": 1, "unit": "degC"},
+        {"name": "MinTemperature", "lsb": 0, "width": 8, "signed": true, "scale": 1, "unit": "degC"}
+      ]
+    },
+    "0x00A": {
+      "name": "MaxMinCurr",
+      "format": "bits",
+      "fields": [
+        {"name": "MaxCurrent", "lsb": 8, "width": 8, "signed": true, "scale": 40, "unit": "mA"},
+        {"name": "MinCurrent", "lsb": 0, "width": 8, "signed": true, "scale": 40, "unit": "mA"}
+      ]
+    },
+    "0x00B": {
+      "name": "MaxMinVolt",
+      "format": "bits",
+      "fields": [
+        {"name": "MaxVCELL", "lsb": 8, "width": 8, "scale": 20, "unit": "mV"},
+        {"name": "MinVCELL", "lsb": 0, "width": 8, "scale": 20, "unit": "mV"}
+      ]
+    },
+    "0x00C": {
+      "name": "Config",
+      "format": "bits",
+      "fields": [
+        {"name": "SS", "lsb": 14, "width": 1, "values": {"0x1": "SOC alerts cleared by software only"}},
+        {"name": "TS", "lsb": 13, "width": 1, "values": {"0x1": "temperature alerts cleared by software only"}},
+        {"name": "VS", "lsb": 12, "width": 1, "values": {"0x1": "voltage alerts cleared by software only"}},
+        {"name": "IS", "lsb": 11, "width": 1, "values": {"0x1": "current alerts cleared by software only"}},
+        {"name": "Tex", "lsb": 8, "width": 1, "values": {"0x1": "external temperature overwrite"}},
+        {"name": "PinConfig", "lsb": 7, "width": 1, "values": {"0x1": "ICHG/VCHG pin config reset"}},
+        {"name": "FTHRM", "lsb": 3, "width": 1, "values": {"0x1": "force thermistor bias"}},
+        {"name": "Aen", "lsb": 2, "width": 1, "values": {"0x1": "fuel-gauge alerts enabled"}},
+        {"name": "Bei", "lsb": 1, "width": 1, "values": {"0x1": "battery insertion alert enabled"}},
+        {"name": "Ber", "lsb": 0, "width": 1, "values": {"0x1": "battery removal alert enabled"}}
+      ]
+    },
+    "0x00D": {"name": "MixSOC", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x00E": {"name": "AvSOC", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x00F": {
+      "name": "MiscCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "FUS", "lsb": 12, "width": 4, "scale": 2.0, "unit": "%/min"},
+        {"name": "MixRate", "lsb": 5, "width": 5, "scale": 0.625, "unit": "mA"},
+        {
+          "name": "SACFG",
+          "lsb": 0,
+          "width": 2,
+          "values": {
+            "0x0": "SOC alerts from RepSOC",
+            "0x1": "SOC alerts from AvSOC",
+            "0x2": "SOC alerts from MixSOC",
+            "0x3": "SOC alerts from VFSOC"
+          }
+        }
+      ]
+    },
+    "0x010": {"name": "FullCapRep", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x012": {"name": "QRTable00", "format": "hex"},
+    "0x014": {"name": "RSlow", "format": "scaled", "scale": 0.244140625, "unit": "mOhm"},
+    "0x016": {"name": "Age", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x017": {"name": "Cycles", "format": "scaled", "scale": 25.0, "unit": "% of a cycle"},
+    "0x018": {"name": "DesignCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x019": {"name": "AvgVCell", "format": "scaled", "scale": 0.078125, "unit": "mV"},
+    "0x01A": {"name": "VCell", "format": "scaled", "scale": 0.078125, "unit": "mV"},
+    "0x01B": {"name": "Temp", "format": "scaled", "scale": 0.00390625, "unit": "degC", "signed": true},
+    "0x01C": {"name": "Current", "format": "scaled", "scale": 0.15625, "unit": "mA", "signed": true},
+    "0x01D": {"name": "AvgCurrent", "format": "scaled", "scale": 0.15625, "unit": "mA", "signed": true},
+    "0x01F": {
+      "name": "VEmpty",
+      "format": "bits",
+      "fields": [
+        {"name": "VE", "lsb": 7, "width": 9, "scale": 10, "unit": "mV"},
+        {"name": "VR", "lsb": 0, "width": 7, "scale": 40, "unit": "mV"}
+      ]
+    },
+    "0x021": {"name": "DevName", "format": "enum", "values": {"0x5030": "MAX77972"}},
+    "0x022": {"name": "QRTable10", "format": "hex"},
+    "0x023": {"name": "FullCapNom", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x024": {"name": "FullCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x025": {"name": "VFRemCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x026": {"name": "MixCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x027": {"name": "AvCap", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x028": {"name": "ChargingCurrent", "format": "scaled", "scale": 0.15625, "unit": "mA"},
+    "0x029": {"name": "IChgTerm", "format": "scaled", "scale": 0.15625, "unit": "mA"},
+    "0x02A": {"name": "ChargingVoltage", "format": "charging_voltage"},
+    "0x02E": {"name": "QResidual", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x02F": {
+      "name": "LearnCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "FiltEmpty", "lsb": 15, "width": 1, "show_zero": true, "values": {"0x0": "detect empty using VCell", "0x1": "detect empty using AvgVCell"}},
+        {"name": "LearnStage", "lsb": 4, "width": 3},
+        {"name": "MixEn", "lsb": 1, "width": 1, "show_zero": true, "values": {"0x0": "MixEn disabled", "0x1": "MixEn enabled"}}
+      ]
+    },
+    "0x032": {"name": "QRTable20", "format": "hex"},
+    "0x034": {"name": "DieTemp", "format": "scaled", "scale": 0.00390625, "unit": "degC", "signed": true},
+    "0x035": {"name": "AvgTA", "format": "scaled", "scale": 0.00390625, "unit": "degC", "signed": true},
+    "0x039": {
+      "name": "SOCHold",
+      "format": "bits",
+      "fields": [
+        {"name": "HoldEn99", "lsb": 12, "width": 1, "show_zero": true, "values": {"0x0": "99% hold disabled", "0x1": "99% hold enabled"}},
+        {"name": "EmptyVoltHold", "lsb": 5, "width": 7, "scale": 10, "unit": "mV"},
+        {"name": "EmptySOCHold", "lsb": 0, "width": 5, "scale": 0.5, "unit": "%"}
+      ]
+    },
+    "0x03A": {
+      "name": "ProtStatus",
+      "format": "bits",
+      "fields": [
+        {"name": "TooHotC", "lsb": 14, "width": 1, "values": {"0x1": "TooHot, charging stopped"}},
+        {"name": "Full", "lsb": 13, "width": 1, "values": {"0x1": "full qualified"}},
+        {"name": "TooColdC", "lsb": 12, "width": 1, "values": {"0x1": "TooCold, charging stopped"}}
+      ]
+    },
+    "0x03C": {
+      "name": "FStat2",
+      "format": "bits",
+      "fields": [
+        {"name": "FDet", "lsb": 12, "width": 1, "values": {"0x1": "full detected"}},
+        {"name": "OCV_OutLimits", "lsb": 11, "width": 1, "values": {"0x1": "OCV outside keep-out region"}}
+      ]
+    },
+    "0x03D": {
+      "name": "FStat",
+      "format": "bits",
+      "fields": [
+        {"name": "RelDt", "lsb": 9, "width": 1, "values": {"0x1": "cell relaxed"}},
+        {"name": "EDet", "lsb": 8, "width": 1, "values": {"0x1": "empty detected"}},
+        {"name": "FQ", "lsb": 7, "width": 1, "values": {"0x1": "fully qualified"}},
+        {"name": "RelDt2", "lsb": 6, "width": 1, "values": {"0x1": "long relaxation"}},
+        {"name": "DNR", "lsb": 0, "width": 1, "values": {"0x1": "data not ready"}}
+      ]
+    },
+    "0x03E": {
+      "name": "FProtStat",
+      "format": "bits",
+      "fields": [
+        {
+          "name": "StepID",
+          "lsb": 7,
+          "width": 3,
+          "values": {"0x0": "step 0", "0x1": "step 1", "0x2": "step 2", "0x3": "step 3", "0x4": "step 4"}
+        },
+        {"name": "IsDis", "lsb": 5, "width": 1, "values": {"0x1": "battery discharging"}},
+        {
+          "name": "Tempid",
+          "lsb": 0,
+          "width": 3,
+          "values": {
+            "0x0": "Room",
+            "0x1": "Warm",
+            "0x2": "Hot1",
+            "0x3": "Hot2/TooHot",
+            "0x4": "TooCold",
+            "0x5": "Cold2",
+            "0x6": "Cold1",
+            "0x7": "Cool"
+          }
+        }
+      ]
+    },
+    "0x03F": {"name": "Timer", "format": "scaled", "scale": 175.8, "unit": "ms"},
+    "0x042": {"name": "QRTable30", "format": "hex"},
+    "0x045": {"name": "dQAcc", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x046": {"name": "dPAcc", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x04D": {"name": "QH", "format": "scaled", "scale": 0.5, "unit": "mAh"},
+    "0x051": {"name": "ICHGIN", "format": "scaled", "scale": 0.15625, "unit": "mA", "signed": true},
+    "0x052": {"name": "VSys", "format": "scaled", "scale": 0.078125, "unit": "mV"},
+    "0x080": {"name": "OCVTable0", "format": "hex"},
+    "0x081": {"name": "OCVTable1", "format": "hex"},
+    "0x082": {"name": "OCVTable2", "format": "hex"},
+    "0x083": {"name": "OCVTable3", "format": "hex"},
+    "0x084": {"name": "OCVTable4", "format": "hex"},
+    "0x085": {"name": "OCVTable5", "format": "hex"},
+    "0x086": {"name": "OCVTable6", "format": "hex"},
+    "0x087": {"name": "OCVTable7", "format": "hex"},
+    "0x088": {"name": "OCVTable8", "format": "hex"},
+    "0x089": {"name": "OCVTable9", "format": "hex"},
+    "0x08A": {"name": "OCVTable10", "format": "hex"},
+    "0x08B": {"name": "OCVTable11", "format": "hex"},
+    "0x08C": {"name": "OCVTable12", "format": "hex"},
+    "0x08D": {"name": "OCVTable13", "format": "hex"},
+    "0x08E": {"name": "OCVTable14", "format": "hex"},
+    "0x08F": {"name": "OCVTable15", "format": "hex"},
+    "0x090": {"name": "XTable0", "format": "hex"},
+    "0x091": {"name": "XTable1", "format": "hex"},
+    "0x092": {"name": "XTable2", "format": "hex"},
+    "0x093": {"name": "XTable3", "format": "hex"},
+    "0x094": {"name": "XTable4", "format": "hex"},
+    "0x095": {"name": "XTable5", "format": "hex"},
+    "0x096": {"name": "XTable6", "format": "hex"},
+    "0x097": {"name": "XTable7", "format": "hex"},
+    "0x098": {"name": "XTable8", "format": "hex"},
+    "0x099": {"name": "XTable9", "format": "hex"},
+    "0x09A": {"name": "XTable10", "format": "hex"},
+    "0x09B": {"name": "XTable11", "format": "hex"},
+    "0x09C": {"name": "XTable12", "format": "hex"},
+    "0x09D": {"name": "XTable13", "format": "hex"},
+    "0x09E": {"name": "XTable14", "format": "hex"},
+    "0x09F": {"name": "XTable15", "format": "hex"},
+    "0x0A3": {
+      "name": "ModelCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "Refresh", "lsb": 15, "width": 1, "values": {"0x1": "model reload commanded"}},
+        {"name": "VChg", "lsb": 10, "width": 1, "show_zero": true, "values": {"0x0": "charge termination 4.2V", "0x1": "charge termination above 4.25V"}},
+        {
+          "name": "ModelID",
+          "lsb": 4,
+          "width": 4,
+          "values": {
+            "0x0": "lithium cobalt-oxide variants",
+            "0x2": "lithium NCR/NCA cells",
+            "0x6": "lithium iron-phosphate (LiFePO4)"
+          }
+        }
+      ]
+    },
+    "0x0A4": {"name": "MaxPeakPower", "format": "scaled", "scale": 0.8, "unit": "mW"},
+    "0x0A5": {"name": "SusPeakPower", "format": "scaled", "scale": 0.8, "unit": "mW"},
+    "0x0A6": {"name": "PackResistance", "format": "scaled", "scale": 0.244140625, "unit": "mOhm"},
+    "0x0A7": {"name": "SysResistance", "format": "scaled", "scale": 0.244140625, "unit": "mOhm"},
+    "0x0A8": {"name": "MinSysVoltage", "format": "scaled", "scale": 0.078125, "unit": "mV"},
+    "0x0A9": {"name": "MPPCurrent", "format": "scaled", "scale": 0.15625, "unit": "mA", "signed": true},
+    "0x0AA": {"name": "SPPCurrent", "format": "scaled", "scale": 0.15625, "unit": "mA", "signed": true},
+    "0x0AB": {
+      "name": "Config2",
+      "format": "bits",
+      "fields": [
+        {"name": "LDMdl", "lsb": 15, "width": 1, "values": {"0x1": "load newly written model"}},
+        {"name": "DPEn", "lsb": 12, "width": 1, "values": {"0x1": "dynamic power enabled"}},
+        {"name": "dSOCEn", "lsb": 7, "width": 1, "values": {"0x1": "SOC change alert enabled"}},
+        {"name": "TAlrtEn", "lsb": 6, "width": 1, "values": {"0x1": "temperature alerts enabled"}}
+      ]
+    },
+    "0x0AC": {
+      "name": "IAlrtTh",
+      "format": "bits",
+      "fields": [
+        {"name": "IMAX", "lsb": 8, "width": 8, "signed": true, "scale": 40, "unit": "mA"},
+        {"name": "IMIN", "lsb": 0, "width": 8, "signed": true, "scale": 40, "unit": "mA"}
+      ]
+    },
+    "0x0B0": {
+      "name": "Status2",
+      "format": "bits",
+      "fields": [
+        {"name": "DPReady", "lsb": 12, "width": 1, "values": {"0x1": "dynamic power registers ready"}},
+        {"name": "Hib", "lsb": 1, "width": 1, "values": {"0x1": "in hibernate mode"}}
+      ]
+    },
+    "0x0B1": {"name": "Power", "format": "scaled", "scale": 0.2, "unit": "mW"},
+    "0x0B3": {"name": "AvgPower", "format": "scaled", "scale": 0.2, "unit": "mW"},
+    "0x0B8": {"name": "CGTempCo", "format": "hex"},
+    "0x0BB": {
+      "name": "FOTPStat",
+      "format": "bits",
+      "fields": [
+        {"name": "PatchID", "lsb": 12, "width": 4},
+        {"name": "PinDraft", "lsb": 8, "width": 1, "show_zero": true, "values": {"0x0": "ICHG/VCHG conversion ongoing", "0x1": "ICHG/VCHG filtered and applied"}}
+      ]
+    },
+    "0x0BE": {"name": "TimerH", "format": "scaled", "scale": 3.2, "unit": "h"},
+    "0x0CC": {
+      "name": "PinID",
+      "format": "bits",
+      "fields": [
+        {"name": "iid", "lsb": 8, "width": 8},
+        {"name": "vid", "lsb": 0, "width": 8}
+      ]
+    },
+    "0x0D0": {
+      "name": "nChgConfig0",
+      "format": "bits",
+      "fields": [
+        {"name": "PQEN", "lsb": 15, "width": 1, "values": {"0x1": "low-battery prequalification enabled"}},
+        {"name": "LSEL", "lsb": 14, "width": 1, "show_zero": true, "values": {"0x0": "0.47uH inductor", "0x1": "1.0uH inductor"}},
+        {"name": "RECYCLE_EN", "lsb": 11, "width": 1},
+        {
+          "name": "FCHGTIME",
+          "lsb": 8,
+          "width": 3,
+          "values": {
+            "0x0": "fast-charge timer disabled",
+            "0x1": "3 h",
+            "0x2": "4 h",
+            "0x3": "5 h",
+            "0x4": "6 h",
+            "0x5": "7 h",
+            "0x6": "8 h",
+            "0x7": "10 h"
+          }
+        },
+        {"name": "DISIBS", "lsb": 6, "width": 1, "values": {"0x1": "SYS hard reset, QBAT forced off"}},
+        {"name": "WDTEN", "lsb": 4, "width": 1, "values": {"0x1": "watchdog timer enabled"}},
+        {
+          "name": "MODE",
+          "lsb": 0,
+          "width": 4,
+          "show_zero": true,
+          "values": {
+            "0x0": "battery only, buck off",
+            "0x1": "battery only, buck off",
+            "0x4": "charger disabled, buck on",
+            "0x5": "charger on (step/JEITA controlled)",
+            "0x8": "reverse boost to BYP",
+            "0x9": "reverse boost to BYP",
+            "0xA": "OTG to CHGIN",
+            "0xB": "OTG to CHGIN"
+          }
+        }
+      ]
+    },
+    "0x0D1": {
+      "name": "nChgConfig1",
+      "format": "bits",
+      "fields": [
+        {
+          "name": "MINVSYS",
+          "lsb": 12,
+          "width": 3,
+          "values": {
+            "0x0": "3.0V",
+            "0x1": "3.1V",
+            "0x2": "3.2V",
+            "0x3": "3.3V",
+            "0x4": "3.4V",
+            "0x5": "3.5V",
+            "0x6": "3.6V",
+            "0x7": "3.7V"
+          }
+        },
+        {
+          "name": "B2SOVRC",
+          "lsb": 8,
+          "width": 4,
+          "values": {
+            "0x0": "disabled",
+            "0x1": "3.0A",
+            "0x2": "3.5A",
+            "0x3": "4.0A",
+            "0x4": "4.2A",
+            "0x5": "4.4A",
+            "0x6": "4.5A",
+            "0x7": "4.6A",
+            "0x8": "4.8A",
+            "0x9": "5.0A",
+            "0xA": "5.2A",
+            "0xB": "5.4A",
+            "0xC": "5.6A",
+            "0xD": "5.8A",
+            "0xE": "6.0A",
+            "0xF": "6.2A"
+          }
+        },
+        {
+          "name": "OTG_ILIM",
+          "lsb": 6,
+          "width": 2,
+          "values": {"0x0": "0.5A", "0x1": "0.9A", "0x2": "1.2A", "0x3": "1.5A"}
+        }
+      ]
+    },
+    "0x0D2": {
+      "name": "nChgConfig2",
+      "format": "bits",
+      "fields": [
+        {"name": "WD_QBATOFF", "lsb": 15, "width": 1, "values": {"0x1": "watchdog also turns off buck/QBAT and cycles SYS"}},
+        {
+          "name": "REGTEMP",
+          "lsb": 11,
+          "width": 4,
+          "values": {
+            "0x0": "85C",
+            "0x1": "90C",
+            "0x2": "95C",
+            "0x3": "100C",
+            "0x4": "105C",
+            "0x5": "110C",
+            "0x6": "115C",
+            "0x7": "120C",
+            "0x8": "125C",
+            "0x9": "130C"
+          }
+        },
+        {
+          "name": "FSW",
+          "lsb": 9,
+          "width": 2,
+          "values": {"0x0": "3MHz", "0x1": "2MHz", "0x2": "1.5MHz", "0x3": "reserved"}
+        },
+        {"name": "FSHIP_MODE", "lsb": 8, "width": 1, "values": {"0x1": "enter factory ship mode"}},
+        {"name": "B2SOVRC_DTC", "lsb": 7, "width": 1, "show_zero": true, "values": {"0x0": "6ms debounce", "0x1": "100ms debounce"}},
+        {
+          "name": "SLOWLX",
+          "lsb": 5,
+          "width": 2,
+          "values": {"0x0": "fastest LX slope", "0x1": "slower LX slope", "0x2": "further slower LX slope", "0x3": "slowest LX slope"}
+        },
+        {"name": "DIS_AICL", "lsb": 4, "width": 1, "values": {"0x1": "AICL loop disabled"}},
+        {"name": "WDTCLR", "lsb": 0, "width": 2, "values": {"0x1": "watchdog timer cleared"}}
+      ]
+    },
+    "0x0D3": {
+      "name": "nChgConfig3",
+      "format": "bits",
+      "fields": [
+        {
+          "name": "VBYPSET",
+          "lsb": 8,
+          "width": 7,
+          "show_zero": true,
+          "values": {"0x0": "5.0V", "0x1": "5.1V", "0x2": "5.2V", "0x3": "5.3V", "0x4": "5.4V"}
+        },
+        {"name": "CHGIN_ILIM", "lsb": 0, "width": 7, "scale": 25, "offset": 25, "unit": "mA"}
+      ]
+    },
+    "0x0D4": {
+      "name": "nChgConfig4",
+      "format": "bits",
+      "fields": [
+        {"name": "CHGIN_INLIM_Gate", "lsb": 15, "width": 1, "values": {"0x1": "gate CHGIN_ILIM until BC1.2 completes"}},
+        {
+          "name": "SDPMaxCurr",
+          "lsb": 13,
+          "width": 2,
+          "values": {
+            "0x0": "no CHGIN_INLIM change",
+            "0x1": "CHGIN_INLIM 500mA",
+            "0x2": "CHGIN_INLIM 1A",
+            "0x3": "CHGIN_INLIM 1.5A"
+          }
+        },
+        {"name": "CDPMaxCurr", "lsb": 12, "width": 1, "values": {"0x1": "CDP CHGIN_INLIM 1.5A"}},
+        {"name": "DCDCpl", "lsb": 11, "width": 1, "show_zero": true, "values": {"0x0": "data contact detect 2s", "0x1": "data contact detect 900ms"}},
+        {"name": "DCPDet3A", "lsb": 10, "width": 1, "values": {"0x1": "3A DCP detection enabled"}},
+        {"name": "CHGDETEN", "lsb": 8, "width": 1, "show_zero": true, "values": {"0x0": "BC1.2 disabled", "0x1": "BC1.2 runs automatically"}},
+        {"name": "NO_AUTOISET", "lsb": 7, "width": 1, "show_zero": true, "values": {"0x0": "input limit from USB_INLIM", "0x1": "input limit from CHGIN_ILIM"}},
+        {"name": "DATAMUX", "lsb": 6, "width": 1, "show_zero": true, "values": {"0x0": "pushbutton reset on DATAMUX", "0x1": "USB data mux on DATAMUX"}},
+        {
+          "name": "VCHGIN_REG",
+          "lsb": 3,
+          "width": 2,
+          "values": {"0x0": "4.5V", "0x1": "4.6V", "0x2": "4.7V", "0x3": "4.85V"}
+        },
+        {
+          "name": "INLIM_CLK",
+          "lsb": 1,
+          "width": 2,
+          "values": {"0x0": "8us", "0x1": "256us", "0x2": "1024us", "0x3": "4096us"}
+        },
+        {"name": "DISKIP", "lsb": 0, "width": 1, "values": {"0x1": "skip mode disabled"}}
+      ]
+    },
+    "0x0D5": {
+      "name": "nChgConfig5",
+      "format": "bits",
+      "fields": [
+        {"name": "RestartChg", "lsb": 3, "width": 1, "values": {"0x1": "restart step charging from step 0"}},
+        {"name": "DeepShip", "lsb": 2, "width": 1, "values": {"0x1": "enter DeepShip mode"}},
+        {"name": "ChgEnable", "lsb": 1, "width": 1, "show_zero": true, "values": {"0x0": "charger disabled", "0x1": "charger enabled"}},
+        {"name": "CCDetEn", "lsb": 0, "width": 1, "values": {"0x1": "CC pin detection enabled"}}
+      ]
+    },
+    "0x0D6": {
+      "name": "ChgDetails00",
+      "format": "bits",
+      "fields": [
+        {"name": "AICL_OK", "lsb": 15, "width": 1, "show_zero": true, "values": {"0x0": "in AICL mode", "0x1": "not in AICL mode"}},
+        {"name": "CHGIN_OK", "lsb": 14, "width": 1, "show_zero": true, "values": {"0x0": "CHGIN invalid", "0x1": "CHGIN valid"}},
+        {"name": "CHG_OK", "lsb": 12, "width": 1, "show_zero": true, "values": {"0x0": "charger suspended", "0x1": "charging or charger off"}},
+        {"name": "BAT_OK", "lsb": 11, "width": 1, "show_zero": true, "values": {"0x0": "BAT_DTLS not 0x3/0x4/0x7", "0x1": "BAT_DTLS 0x3, 0x4 or 0x7"}},
+        {"name": "BYP_OK", "lsb": 8, "width": 1, "show_zero": true, "values": {"0x0": "BYP_DTLS not 0x0", "0x1": "BYP node OK"}},
+        {
+          "name": "CHGIN_DTLS",
+          "lsb": 5,
+          "width": 2,
+          "show_zero": true,
+          "values": {
+            "0x0": "VCHGIN invalid (below UVLO or AICL)",
+            "0x1": "VCHGIN invalid (below VSYS + 0.2V)",
+            "0x2": "VCHGIN invalid (above OVLO)",
+            "0x3": "VCHGIN valid"
+          }
+        },
+        {"name": "CHGEN", "lsb": 0, "width": 1, "show_zero": true, "values": {"0x0": "CHGEN pin high", "0x1": "CHGEN pin low"}}
+      ]
+    },
+    "0x0D7": {
+      "name": "ChgDetails01",
+      "format": "bits",
+      "fields": [
+        {"name": "TREG", "lsb": 15, "width": 1, "values": {"0x1": "junction above REGTEMP, current folded back"}},
+        {
+          "name": "BAT_DTLS",
+          "lsb": 12,
+          "width": 3,
+          "show_zero": true,
+          "values": {
+            "0x0": "CHGEN pin low",
+            "0x1": "battery below trickle threshold",
+            "0x2": "charge timer fault",
+            "0x3": "battery OK",
+            "0x4": "low battery, QBAT regulating SYS",
+            "0x5": "battery overvoltage",
+            "0x7": "battery only"
+          }
+        },
+        {
+          "name": "CHG_DTLS",
+          "lsb": 8,
+          "width": 4,
+          "show_zero": true,
+          "values": {
+            "0x0": "prequalification",
+            "0x1": "fast-charge constant current",
+            "0x2": "fast-charge constant voltage",
+            "0x6": "charger timer fault",
+            "0x7": "CHGEN pin low",
+            "0x8": "charger off or input invalid",
+            "0x9": "reverse boost to BYP",
+            "0xA": "die overtemperature protection",
+            "0xB": "watchdog timer expired",
+            "0xF": "OTG mode"
+          }
+        },
+        {"name": "BAT_dis_OC", "lsb": 7, "width": 1, "values": {"0x1": "battery over-discharge detected"}},
+        {
+          "name": "BYP_DTLS",
+          "lsb": 0,
+          "width": 4,
+          "show_zero": true,
+          "values": {
+            "0x0": "BYP node OK",
+            "0x1": "OTG switch current limit reached",
+            "0x2": "reverse boost overcurrent",
+            "0x4": "buck converter negative overcurrent",
+            "0x8": "VBYP reached VBYPSET target"
+          }
+        }
+      ]
+    },
+    "0x0D8": {
+      "name": "UsbDetails",
+      "format": "bits",
+      "fields": [
+        {
+          "name": "CHGTYP",
+          "lsb": 13,
+          "width": 2,
+          "show_zero": true,
+          "values": {
+            "0x0": "no adaptor found",
+            "0x1": "SDP (500mA)",
+            "0x2": "CDP (1.5A)",
+            "0x3": "DCP (1.5A)"
+          }
+        },
+        {
+          "name": "PRCHGTYP",
+          "lsb": 10,
+          "width": 3,
+          "show_zero": true,
+          "values": {
+            "0x0": "no proprietary charger",
+            "0x1": "Samsung 2A",
+            "0x2": "Apple 500mA",
+            "0x3": "Apple 1A",
+            "0x4": "Apple 2A",
+            "0x5": "Apple 12W (2.5A)",
+            "0x6": "DCP 3A",
+            "0x7": "unknown"
+          }
+        },
+        {
+          "name": "CC_CURR",
+          "lsb": 8,
+          "width": 2,
+          "show_zero": true,
+          "values": {"0x0": "not connected", "0x1": "0.5A", "0x2": "1.5A", "0x3": "3.0A"}
+        },
+        {"name": "USB_INLIM", "lsb": 0, "width": 7, "scale": 25, "offset": 25, "unit": "mA"}
+      ]
+    },
+    "0x0DB": {"name": "VByp", "format": "scaled", "scale": 0.625, "unit": "mV"},
+    "0x0E0": {
+      "name": "Command",
+      "format": "enum",
+      "values": {"0x000F": "hardware reset", "0xC400": "soft POR"}
+    },
+    "0x0E1": {
+      "name": "USR",
+      "format": "bits",
+      "fields": [
+        {"name": "NLOCK", "lsb": 0, "width": 1, "show_zero": true, "values": {"0x0": "non-volatile RAM unlocked", "0x1": "non-volatile RAM locked"}}
+      ]
+    },
+    "0x0FB": {"name": "VFOCV", "format": "scaled", "scale": 0.078125, "unit": "mV"},
+    "0x0FF": {"name": "VFSOC", "format": "scaled", "scale": 0.00390625, "unit": "%"},
+    "0x19D": {
+      "name": "nFilterCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "TEMP", "lsb": 11, "width": 3},
+        {"name": "MIX", "lsb": 7, "width": 4},
+        {"name": "VOLT", "lsb": 4, "width": 3},
+        {"name": "CURR", "lsb": 0, "width": 4}
+      ]
+    },
+    "0x1A6": {"name": "nRComp0", "format": "hex"},
+    "0x1A7": {"name": "nTempCo", "format": "hex"},
+    "0x1AB": {
+      "name": "nRGain",
+      "format": "bits",
+      "fields": [
+        {"name": "RGain1", "lsb": 8, "width": 8, "scale": 0.15625, "offset": 80, "unit": "% peak gain"},
+        {"name": "RGain2", "lsb": 4, "width": 4, "scale": 5, "offset": 60, "unit": "% sustained gain"},
+        {"name": "SusToPeakRatio", "lsb": 0, "width": 4, "scale": -0.04, "offset": 0.75, "unit": "x MPPCurrent"}
+      ]
+    },
+    "0x1B6": {
+      "name": "nRelaxCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "LOAD", "lsb": 9, "width": 7, "scale": 5, "unit": "mA"},
+        {"name": "dV", "lsb": 4, "width": 5, "scale": 1.25, "unit": "mV"},
+        {"name": "dt", "lsb": 0, "width": 4, "values": {"0x0": "relaxation never detected"}}
+      ]
+    },
+    "0x1B7": {
+      "name": "nConvgCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "RepLow", "lsb": 12, "width": 4, "scale": 2.0, "unit": "%"},
+        {"name": "VoltLowOff", "lsb": 7, "width": 5, "scale": 20.0, "unit": "mV"},
+        {"name": "MinSlopeX", "lsb": 3, "width": 4, "scale": 0.0625, "unit": "%"},
+        {"name": "RepL_per_stage", "lsb": 0, "width": 3, "scale": 1.0, "unit": "%"}
+      ]
+    },
+    "0x1BA": {
+      "name": "nNVCfg2",
+      "format": "bits",
+      "fields": [
+        {"name": "enSC", "lsb": 14, "width": 1, "values": {"0x1": "special chemistry model enabled"}}
+      ]
+    },
+    "0x1BB": {
+      "name": "nHibCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "EnHib", "lsb": 15, "width": 1, "show_zero": true, "values": {"0x0": "hibernate disabled", "0x1": "hibernate enabled"}},
+        {"name": "HibEnterTime", "lsb": 12, "width": 3},
+        {"name": "HibThreshold", "lsb": 8, "width": 4},
+        {"name": "HibExitTime", "lsb": 3, "width": 2},
+        {"name": "HibScalar", "lsb": 0, "width": 3}
+      ]
+    },
+    "0x1C2": {
+      "name": "nChgCfg0",
+      "format": "bits",
+      "fields": [
+        {"name": "StepChgMode", "lsb": 15, "width": 1, "show_zero": true, "values": {"0x0": "CV step charging", "0x1": "CC step charging"}}
+      ]
+    },
+    "0x1C4": {
+      "name": "nStepCurr",
+      "format": "bits",
+      "fields": [
+        {"name": "StepCurr4", "lsb": 12, "width": 4, "scale": 50, "unit": "mA below step3", "values": {"0x0": "step 4 disabled"}},
+        {"name": "StepCurr3", "lsb": 8, "width": 4, "scale": 50, "unit": "mA below step2", "values": {"0x0": "step 3 disabled"}},
+        {"name": "StepCurr2", "lsb": 4, "width": 4, "scale": 50, "unit": "mA below step1", "values": {"0x0": "step 2 disabled"}},
+        {"name": "StepCurr1", "lsb": 0, "width": 4, "scale": 100, "unit": "mA below step0", "values": {"0x0": "step 1 disabled"}}
+      ]
+    },
+    "0x1C5": {
+      "name": "nStepVolt",
+      "format": "bits",
+      "fields": [
+        {"name": "StepVolt0", "lsb": 12, "width": 4, "scale": 10, "unit": "mV below step1", "values": {"0x0": "step 0 disabled"}},
+        {"name": "StepVolt1", "lsb": 8, "width": 4, "scale": 10, "unit": "mV below step2", "values": {"0x0": "step 1 disabled"}},
+        {"name": "StepVolt2", "lsb": 4, "width": 4, "scale": 10, "unit": "mV below step3", "values": {"0x0": "step 2 disabled"}},
+        {"name": "StepVolt3", "lsb": 0, "width": 4, "scale": 10, "unit": "mV below step4", "values": {"0x0": "step 3 disabled"}}
+      ]
+    },
+    "0x1C7": {
+      "name": "nAlrtCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "Edge", "lsb": 2, "width": 1, "show_zero": true, "values": {"0x0": "level-triggered ALRT", "0x1": "edge-triggered ALRT"}}
+      ]
+    },
+    "0x1C8": {
+      "name": "nCGain",
+      "format": "bits",
+      "fields": [
+        {"name": "CGain", "lsb": 6, "width": 10},
+        {"name": "COff", "lsb": 0, "width": 6, "signed": true, "scale": 0.15625, "unit": "mA"}
+      ]
+    },
+    "0x1C9": {
+      "name": "nADCCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "R100", "lsb": 7, "width": 1, "show_zero": true, "values": {"0x0": "10kOhm THM pullup", "0x1": "100kOhm THM pullup"}},
+        {"name": "ThEn", "lsb": 4, "width": 1, "show_zero": true, "values": {"0x0": "Temp reports die temperature", "0x1": "Temp reports THM thermistor"}},
+        {"name": "RsnsEn", "lsb": 2, "width": 1, "show_zero": true, "values": {"0x0": "internal current sense", "0x1": "external sense resistor"}}
+      ]
+    },
+    "0x1CA": {
+      "name": "nThermCfg",
+      "format": "enum",
+      "values": {
+        "0x71DE": "Murata NCP15XH103F03RC",
+        "0x91C3": "Semitec 103AT-2",
+        "0x5183": "TDK B57560G1103 7003",
+        "0x48EB": "Murata NCU15WF104F6SRC",
+        "0x08D9": "NTC TH11-4H104F",
+        "0x58EF": "TDK NTCG064EF104FTBX"
+      }
+    },
+    "0x1CC": {
+      "name": "nVChgCfg1",
+      "format": "bits",
+      "fields": [
+        {"name": "WarmChargeVolt", "lsb": 12, "width": 4, "scale": 10, "unit": "mV below room", "values": {"0x0": "no warm reduction"}},
+        {"name": "RoomChargeVolt", "lsb": 4, "width": 8, "scale": 10, "offset": 3400, "unit": "mV"},
+        {"name": "CoolChargeVolt", "lsb": 0, "width": 4, "scale": 10, "unit": "mV below room", "values": {"0x0": "no cool reduction"}}
+      ]
+    },
+    "0x1CD": {
+      "name": "nVChgCfg2",
+      "format": "bits",
+      "fields": [
+        {"name": "Hot2ChargeVolt", "lsb": 12, "width": 4, "scale": 10, "unit": "mV below hot1", "values": {"0x0": "no hot2 reduction"}},
+        {"name": "Hot1ChargeVolt", "lsb": 8, "width": 4, "scale": 10, "unit": "mV below warm", "values": {"0x0": "no hot1 reduction"}},
+        {"name": "Cold1ChargeVolt", "lsb": 4, "width": 4, "scale": 10, "unit": "mV below cool", "values": {"0x0": "no cold1 reduction"}},
+        {"name": "Cold2ChargeVolt", "lsb": 0, "width": 4, "scale": 10, "unit": "mV below cold1", "values": {"0x0": "no cold2 reduction"}}
+      ]
+    },
+    "0x1CE": {
+      "name": "nIChgCfg1",
+      "format": "bits",
+      "fields": [
+        {"name": "WarmChargeCurr", "lsb": 11, "width": 5, "scale": 50, "unit": "mA below room", "values": {"0x0": "no warm reduction"}},
+        {"name": "RoomChargeCurr", "lsb": 5, "width": 6, "scale": 50, "offset": 50, "unit": "mA"},
+        {"name": "CoolChargeCurr", "lsb": 0, "width": 5, "scale": 50, "unit": "mA below room", "values": {"0x0": "no cool reduction"}}
+      ]
+    },
+    "0x1CF": {
+      "name": "nIChgCfg2",
+      "format": "bits",
+      "fields": [
+        {"name": "Hot2ChargeCurr", "lsb": 12, "width": 4, "scale": 50, "unit": "mA below hot1", "values": {"0x0": "no hot2 reduction"}},
+        {"name": "Hot1ChargeCurr", "lsb": 8, "width": 4, "scale": 50, "unit": "mA below warm", "values": {"0x0": "no hot1 reduction"}},
+        {"name": "Cold1ChargeCurr", "lsb": 4, "width": 4, "scale": 50, "unit": "mA below cool", "values": {"0x0": "no cold1 reduction"}},
+        {"name": "Cold2ChargeCurr", "lsb": 0, "width": 4, "scale": 50, "unit": "mA below cold1", "values": {"0x0": "no cold2 reduction"}}
+      ]
+    },
+    "0x1D1": {
+      "name": "nTPrtTh1",
+      "format": "bits",
+      "fields": [
+        {"name": "Tcold2", "lsb": 12, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC below Tcold1", "values": {"0x0": "Cold2 zone skipped"}},
+        {"name": "Tcold1", "lsb": 8, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC below Tcool", "values": {"0x0": "Cold1 zone skipped"}},
+        {"name": "Tcool", "lsb": 4, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC below Troom", "values": {"0x0": "Cool zone skipped"}},
+        {"name": "Troom", "lsb": 0, "width": 4, "scale": 2.5, "offset": 10, "unit": "degC"}
+      ]
+    },
+    "0x1D5": {
+      "name": "nTPrtTh2",
+      "format": "bits",
+      "fields": [
+        {"name": "Ttoohot", "lsb": 12, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC above Thot2", "values": {"0x0": "TooHot zone skipped"}},
+        {"name": "Thot2", "lsb": 8, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC above Thot1", "values": {"0x0": "Hot2 zone skipped"}},
+        {"name": "Thot1", "lsb": 4, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC above Twarm", "values": {"0x0": "Hot1 zone skipped"}},
+        {"name": "Twarm", "lsb": 0, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "degC above Troom"}
+      ]
+    },
+    "0x1D6": {
+      "name": "nProtMiscTh",
+      "format": "bits",
+      "fields": [
+        {"name": "CurrDet", "lsb": 4, "width": 4, "scale": 2.5, "offset": 2.5, "unit": "mA"}
+      ]
+    },
+    "0x1D7": {
+      "name": "nProtCfg",
+      "format": "bits",
+      "fields": [
+        {"name": "FullEn", "lsb": 13, "width": 1, "show_zero": true, "values": {"0x0": "full-charge protection disabled", "0x1": "full-charge protection enabled"}}
+      ]
+    },
+    "0x1DC": {
+      "name": "nDelayCfg",
+      "format": "bits",
+      "fields": [
+        {
+          "name": "FullTimer",
+          "lsb": 11,
+          "width": 3,
+          "show_zero": true,
+          "values": {
+            "0x0": "33s to 40s",
+            "0x1": "45s to 67s",
+            "0x2": "1.5min to 2.25min",
+            "0x3": "3min to 4.5min",
+            "0x4": "6min to 9min",
+            "0x5": "12min to 18min",
+            "0x6": "24min to 36min",
+            "0x7": "72min to 1.6hr"
+          }
+        }
+      ]
+    },
+    "0x1E1": {
+      "name": "nScOcvLim",
+      "format": "bits",
+      "fields": [
+        {"name": "OCV_Low_Lim", "lsb": 7, "width": 9, "scale": 5.0, "offset": 2560, "unit": "mV"},
+        {"name": "OCV_Delta", "lsb": 0, "width": 7, "scale": 2.5, "unit": "mV"}
+      ]
+    },
+    "0x1E3": {
+      "name": "nDesignVoltage",
+      "format": "bits",
+      "fields": [
+        {"name": "Vminsys", "lsb": 8, "width": 8, "scale": 20.0, "unit": "mV"}
+      ]
+    }
+  }
+}
